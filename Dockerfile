@@ -1,4 +1,4 @@
-# Production Container for Google Cloud Run (Serverless Free Tier: $0.00/mo)
+# Production Container for Google Cloud Run Serverless
 FROM node:22-slim
 
 WORKDIR /app

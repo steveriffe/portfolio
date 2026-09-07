@@ -1,5 +1,5 @@
 #!/bin/bash
-# 1-Command Deployment to Google Cloud Run (Free Tier: $0.00/month)
+# 1-Command Deployment to Google Cloud Run Serverless
 # Matches Steve Riffe's Career Agent & Music Roast Cloud Run deployment architecture
 # Target Domain: https://portfolio.riffe.co.uk
 

@@ -71,7 +71,7 @@
       "Stage 3: Spatial Coordination"
     ],
     "image": "image5.jpg",
-    "speakerNote": "Stage 3 is Spatial Coordination. When our team was tasked with preserving and restoring Qasr al Hosn\u2014the historic 18th-century stone fort in Abu Dhabi\u2014we didn't start with hand-sketched drafting. We brought in terrestrial LIDAR scanners, bathing that ancient coral stone in millions of laser coordinates to generate an ultra-dense Point Cloud\u2014a millimeter-accurate digital ghost of reality.\n\nThat scan seeded our Building Information Model (BIM). In BIM, a building is no longer a static 2D blueprint; it is a relational 3D database. Every stone, steel lintel, and bolt carries rich metadata: its quarry origin, structural load rating, installation date, and maintenance ledger. For decades, business intelligence has handed users flat 2D charts\u2014static snapshots of the past. In Data Urbanism, we build a living Digital Twin of the enterprise. Every metric carries complete dbt lineage: where the raw row was quarried, who transformed it, what tests verified it, and the exact compute cost to query it in Snowflake or BigQuery.\n\nEven more vital is Clash Detection. In BIM, automated algorithms detect if an HVAC duct collides with a structural steel beam before fabrication. In modern data systems, we perform Semantic Clash Detection: identifying where Marketing's definition of 'Customer Acquisition' collides head-on with Finance's definition of 'Recognized Revenue'\u2014resolving the conflict in code before it triggers an executive catastrophe."
+    "speakerNote": "Stage 3 is Spatial Coordination. When our team was tasked with preserving and restoring Qasr al Hosn\u2014the historic 18th-century stone fort in Abu Dhabi\u2014we didn't start with hand-sketched drafting. We brought in terrestrial LIDAR scanners, bathing that ancient coral stone in millions of laser coordinates to generate an ultra-dense Point Cloud\u2014a millimeter-accurate digital ghost of reality.\n\nThat scan seeded our Building Information Model (BIM). In BIM, a building is no longer a static 2D blueprint; it is a relational 3D database. Every stone, steel lintel, and bolt carries rich metadata: its quarry origin, structural load rating, installation date, and maintenance ledger. For decades, business intelligence has handed users flat 2D charts\u2014static snapshots of the past. In Data Urbanism, we build a living Digital Twin of the enterprise. Every metric carries complete data lineage: where the raw row was quarried, who transformed it, what tests verified it, and the exact compute cost to query it in Snowflake or BigQuery.\n\nEven more vital is Clash Detection. In BIM, automated algorithms detect if an HVAC duct collides with a structural steel beam before fabrication. In modern data systems, we perform Semantic Clash Detection: identifying where Marketing's definition of 'Customer Acquisition' collides head-on with Finance's definition of 'Recognized Revenue'\u2014resolving the conflict in code before it triggers an executive catastrophe."
   },
   {
     "slideNumber": 8,
@@ -93,7 +93,7 @@
       "Stage 5: Manufacturing and Construction"
     ],
     "image": "image7.jpg",
-    "speakerNote": "Stage 5 is where construction actually occurs\u2014yet modern construction rarely looks like a muddy job site anymore. Shell faced a massive logistical crisis across Europe: an aging network of thousands of legacy roadside service stations that required urgent modernization. Had we approached every individual station as a bespoke on-site construction project, the rollout would have dragged on for decades and hemorrhaged capital.\n\nSo we shifted our entire mental model from 'Bespoke Construction' to Industrial Manufacturing. We implemented DfMA: Design for Manufacture and Assembly. Instead of pouring custom concrete or welding steel on-site in unpredictable weather, we engineered standardized, prefabricated modular cassettes in a controlled factory setting. When delivered to the site, the project wasn't a build; it was an assembly. What once took six months on-site was completed in under two weeks.\n\nThis is precisely how I lead modern analytics engineering. We must dismantle the craft-guild mindset of hand-writing custom, one-off SQL reports for every incoming ticket. We manage a Data Supply Chain. Using Snowflake, BigQuery, and dbt, we fabricate reusable, modular components\u2014standardized staging models, semantic customer metrics, and governed dimensions. When a new business capability is needed, we assemble pre-tested, certified blocks of code at the speed of the market."
+    "speakerNote": "Stage 5 is where construction actually occurs\u2014yet modern construction rarely looks like a muddy job site anymore. Shell faced a massive logistical crisis across Europe: an aging network of thousands of legacy roadside service stations that required urgent modernization. Had we approached every individual station as a bespoke on-site construction project, the rollout would have dragged on for decades and hemorrhaged capital.\n\nSo we shifted our entire mental model from 'Bespoke Construction' to Industrial Manufacturing. We implemented DfMA: Design for Manufacture and Assembly. Instead of pouring custom concrete or welding steel on-site in unpredictable weather, we engineered standardized, prefabricated modular cassettes in a controlled factory setting. When delivered to the site, the project wasn't a build; it was an assembly. What once took six months on-site was completed in under two weeks.\n\nThis is precisely how I lead modern analytics engineering. We must dismantle the craft-guild mindset of hand-writing custom, one-off SQL reports for every incoming ticket. We manage a Data Supply Chain. Using Snowflake and BigQuery, we fabricate reusable, modular components\u2014standardized staging models, semantic customer metrics, and governed dimensions. When a new business capability is needed, we assemble pre-tested, certified blocks of code at the speed of the market."
   },
   {
     "slideNumber": 10,
@@ -120,39 +120,19 @@
   {
     "slideNumber": 12,
     "texts": [
-      "Thank you"
-    ],
-    "image": null,
-    "speakerNote": "Walking through the 8 stages of the RIBA Plan of Work reveals a fundamental truth: great architecture is not an accident of genius; it is the inevitable outcome of disciplined process.\n\nWhen we respect the progression from Strategic Definition to Post-Occupancy Evaluation, we replace chaotic fire drills with predictable, repeatable engineering excellence.\n\nYet beyond the sequence of stages, three radical structural principles govern whether an analytics system stands the test of time or collapses under its own weight: Furniture vs. Foundation, The Wayfinding Gap, and Adaptive Reuse. Let us examine each one."
-  },
-  {
-    "slideNumber": 13,
-    "texts": [
-      "Furniture v Foundation",
-      "data as load bearing",
-      "Private Residence, Guildford, England"
-    ],
-    "image": "image16.png",
-    "speakerNote": "Early in my architectural career at a boutique practice in London, we were deep in the Technical Design phase of a high-end private residence in Guildford. Structural footings were poured; the steel frame was fabricated.\n\nThen the client visited the site and announced a 'simple tweak': they wanted to slide the kitchen island four meters across the room, alter the plumbing drops, and change out several stone fixtures. In their mind, they were simply rearranging the furniture. In physical reality, moving that island severed main drain stacks, required re-engineering the structural slab, triggered new municipal approvals, and hit directly in the middle of European factory holidays when suppliers were shut down. A 'two-minute idea' derailed the schedule by four months.\n\nEvery single week in enterprise analytics, we witness this exact phenomenon. A business stakeholder casually asks: 'Can we just add this one filter?' or 'Can you just splice in this secondary data source?'\n\nThey believe they are politely asking you to scoot a coffee table. They do not realize they are asking you to sledgehammer a load-bearing semantic wall without reinforcing the roof. This tragedy happens because corporate analytics has lacked a shared vocabulary of architectural maturity. We haven't had an explicit map that signals when a metric is fluid and when the concrete is set. In Data Urbanism, we establish clear structural boundaries: cosmetic presentation layers can be rearranged freely, but our semantic foundations remain mathematically protected."
-  },
-  {
-    "slideNumber": 14,
-    "texts": [
-      "The Wayfinding Gap",
-      "role of the RIBA Client Advisor",
-      "Frenson Estate, Liverpool, England"
-    ],
-    "image": "image17.jpg",
-    "speakerNote": "Between the sparkling strategic vision in the boardroom and the gritty reality of engineering delivery lies an unforgiving chasm: the Wayfinding Gap. This is the masterplan for the Frenson Estate in Liverpool. It is not an engineering specification of pipe gauges; it is an architectural drawing of human relationships. It diagrams how residential fabric, public green spaces, transit arteries, and commercial hubs interlock.\n\nIn the RIBA methodology, this is where the Client Advisor operates. I think of them as master wayfinders. When technical complexity mounts, when unexpected legacy constraints emerge, and when project teams are buried in the weeds of implementation, the Client Advisor keeps the map open on the table. They remind every stakeholder where we stand, why we made past tradeoffs, and how each tactical decision ties back to the original civic mission.\n\nIn enterprise data initiatives, this is precisely the leadership role I inhabit: bridging the translation gap between the Chief Actuary or VP of Sales and the cloud data engineers. We prevent scope drift, translate business nuance into technical precision, and ensure the final product delivers the strategic outcome envisioned on day one."
-  },
-  {
-    "slideNumber": 15,
-    "texts": [
       "U2 360 Tour \u201cClaw\u201d Stages",
       "Adaptive Reuse",
       "the permanence of temporary"
     ],
     "image": "image15.jpg",
     "speakerNote": "We opened this journey looking at the Supertrees of Singapore\u2014machines of concrete and steel disguised as living botanical organisms. We close with this towering icon: 'The Claw,' the gargantuan 165-foot steel structure engineered for U2's 360\u00b0 world tour.\n\nTo millions of concertgoers, it appeared to be a transient entertainment stunt\u2014designed to be bolted together, dismantled, packed into shipping containers, and discarded when the world tour ended. Yet because Mark Fisher and the structural engineers designed it with profound mathematical rigor and modular structural integrity, The Claw refused to die as scrap metal.\n\nInstead, it underwent Adaptive Reuse: transformed into a permanent, iconic civic pavilion and community event structure at the Loveland Living Planet Aquarium in Utah, where it now hosts educational exhibitions and public gatherings. That is the ultimate ambition of Data Urbanism.\n\nVisualization tools come and go. Today an organization uses Tableau; tomorrow Sigma; the day after that, custom agentic UI. Front-end tools are temporary stages. If you build your data pipelines with rigorous semantic architecture, decoupled modular logic, and load-bearing integrity, your foundational data assets will outlive any transient software vendor. You aren't just shipping a temporary dashboard for this quarter's executive review\u2014you are coding the load-bearing skeleton of the enterprise."
+  },
+  {
+    "slideNumber": 13,
+    "texts": [
+      "Thank you"
+    ],
+    "image": null,
+    "speakerNote": "Walking through the 8 stages of the RIBA Plan of Work reveals a fundamental truth: great architecture is not an accident of genius; it is the inevitable outcome of disciplined process.\n\nWhen we respect the progression from Strategic Definition to Post-Occupancy Evaluation, we replace chaotic fire drills with predictable, repeatable engineering excellence.\n\nYet beyond the sequence of stages, three radical structural principles govern whether an analytics system stands the test of time or collapses under its own weight: Furniture vs. Foundation, The Wayfinding Gap, and Adaptive Reuse. Let us examine each one."
   }
 ]
