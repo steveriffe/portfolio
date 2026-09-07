@@ -69,7 +69,7 @@
         <div class="flex items-center gap-3">
           <button id="speakerNotesToggleBtn" class="btn-secondary px-4 py-2 text-xs flex items-center gap-2">
             <span class="w-2 h-2 rounded-full bg-orange-400"></span>
-            <span id="notesToggleText">Show Speaker Notes</span>
+            <span id="notesToggleText">Hide Takeaways</span>
           </button>
         </div>
       </div>
@@ -148,17 +148,17 @@
 
       </div>
 
-      <!-- ================= SPEAKER NOTES DRAWER ================= -->
+      <!-- ================= KEY ARCHITECTURAL TAKEAWAYS DRAWER ================= -->
       <div id="speakerNotesDrawer" class="mt-6 pt-6 border-t border-white/10 bg-slate-950/60 -mx-4 -mb-4 sm:-mx-6 sm:-mb-6 p-6 transition-all duration-300">
         <div class="flex items-center justify-between mb-3">
           <div class="flex items-center gap-2">
-            <span class="text-base">🎙️</span>
-            <span class="text-xs font-mono uppercase tracking-wider text-orange-400 font-bold">Speaker Notes & Commentary</span>
+            <span class="text-base">🏛️</span>
+            <span class="text-xs font-mono uppercase tracking-wider text-orange-400 font-bold">Key Architectural Takeaways</span>
           </div>
           <button id="closeNotesBtn" class="text-xs text-slate-400 hover:text-white">Close</button>
         </div>
-        <div id="speakerNotesContent" class="text-sm text-slate-300 font-normal leading-relaxed space-y-3 max-h-60 overflow-y-auto pr-2">
-          <!-- Loaded dynamically -->
+        <div id="speakerNotesContent" class="text-sm text-slate-300 font-normal leading-relaxed space-y-2 max-h-64 overflow-y-auto pr-2">
+          <!-- Loaded dynamically as bullets -->
         </div>
       </div>
 
@@ -446,10 +446,21 @@
       }
 
       const notesContainer = document.getElementById('speakerNotesContent');
-      if (slide.speakerNote && slide.speakerNote.trim()) {
-        notesContainer.innerHTML = `<p class="leading-relaxed">${slide.speakerNote.replace(/\n\n/g, '<br/><br/>')}</p>`;
+      if (slide.bullets && slide.bullets.length) {
+        notesContainer.innerHTML = `
+          <ul class="space-y-2.5">
+            ${slide.bullets.map(b => `
+              <li class="flex items-start gap-2.5 text-xs sm:text-sm text-slate-300 leading-relaxed">
+                <span class="text-orange-400 font-bold mt-0.5 shrink-0">▶</span>
+                <span>${b}</span>
+              </li>
+            `).join('')}
+          </ul>
+        `;
+      } else if (slide.speakerNote && slide.speakerNote.trim()) {
+        notesContainer.innerHTML = `<p class="leading-relaxed text-xs sm:text-sm">${slide.speakerNote}</p>`;
       } else {
-        notesContainer.innerHTML = '<p class="italic text-slate-400">Closing summary: bringing architectural discipline, human-centric design, and permanence to enterprise data systems.</p>';
+        notesContainer.innerHTML = '<p class="italic text-slate-400 text-xs">Bringing architectural discipline, human-centric design, and structural permanence to enterprise data ecosystems.</p>';
       }
 
       document.querySelectorAll('.thumb-btn').forEach((btn, i) => {
@@ -520,13 +531,13 @@
     notesToggleBtn.addEventListener('click', () => {
       notesOpen = !notesOpen;
       notesDrawer.classList.toggle('hidden', !notesOpen);
-      notesToggleText.innerText = notesOpen ? 'Hide Speaker Notes' : 'Show Speaker Notes';
+      notesToggleText.innerText = notesOpen ? 'Hide Takeaways' : 'Show Takeaways';
     });
 
     document.getElementById('closeNotesBtn').addEventListener('click', () => {
       notesOpen = false;
       notesDrawer.classList.add('hidden');
-      notesToggleText.innerText = 'Show Speaker Notes';
+      notesToggleText.innerText = 'Show Takeaways';
     });
 
     loadData();
