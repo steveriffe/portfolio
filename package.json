@@ -1,0 +1,25 @@
+{
+  "name": "steve-riffe-portfolio",
+  "version": "1.0.0",
+  "description": "Steve Riffe Portfolio Portal & Project Walkthroughs",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": [
+    "portfolio",
+    "data-urbanism",
+    "aviation-analytics",
+    "agentic-ai",
+    "tableau",
+    "sigma",
+    "cloud-run"
+  ],
+  "author": "Steve Riffe <steve@riffe.co.uk>",
+  "license": "MIT",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "express": "^4.19.2"
+  }
+}

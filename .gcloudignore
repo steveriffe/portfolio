@@ -1,0 +1,10 @@
+.gcloudignore
+.git
+.gitignore
+.DS_Store
+node_modules
+npm-debug.log
+scratch
+tmp
+*.md
+Data Urbanism/Data Urbanism.pptx

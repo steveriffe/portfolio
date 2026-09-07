@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Urbanism | Steve Riffe Architectural Framework</title>
+  <meta name="description" content="Data Urbanism: Adapting the RIBA Plan of Work to enterprise analytics, load-bearing semantic foundations, and sustainable digital infrastructure.">
+  <link rel="icon" type="image/png" href="/images/apple-touch-icon.png">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="selection:bg-orange-500 selection:text-white">
+
+  <!-- ================= TOP NAVIGATION ================= -->
+  <header class="fixed top-0 left-0 right-0 z-50 glass-surface border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-600 to-slate-900 border border-blue-400/30 flex items-center justify-center font-mono font-bold text-white shadow-lg group-hover:border-orange-500 transition-colors">
+          SR
+        </div>
+        <div>
+          <div class="font-bold text-white text-lg tracking-tight group-hover:text-orange-400 transition-colors">Steve Riffe</div>
+          <div class="text-xs font-mono text-slate-400">Data Urbanism · Solutions Architect</div>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-300">
+        <a href="/" class="hover:text-white transition-colors">Home Portal</a>
+        <a href="/data-urbanism" class="text-orange-400 font-semibold border-b-2 border-orange-500 pb-0.5">Data Urbanism</a>
+        <a href="/avdb" class="hover:text-white transition-colors">AvDB Aviation</a>
+        <a href="/career" class="hover:text-white transition-colors">Career Radar</a>
+        <a href="/music-roast" class="hover:text-white transition-colors">Music Roast</a>
+        <a href="/tableau" class="hover:text-white transition-colors">Tableau</a>
+        <a href="/resume" class="hover:text-white transition-colors">Resume</a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="hidden sm:flex items-center gap-3">
+        <a href="/" class="btn-secondary px-4 py-2 text-xs">
+          ← Back to Portal
+        </a>
+        <a href="mailto:steve@riffe.co.uk" class="btn-orange px-4 py-2 text-xs">
+          Contact Steve
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= MAIN PRESENTATION CONTENT ================= -->
+  <main class="pt-28 pb-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <!-- Breadcrumb & Header -->
+    <div class="mb-8">
+      <div class="flex items-center gap-2 text-xs font-mono text-slate-400 mb-2">
+        <a href="/" class="hover:text-white">PORTAL</a>
+        <span>/</span>
+        <span class="text-orange-400">METHODOLOGY & SYSTEMS FRAMEWORK</span>
+      </div>
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+        <div>
+          <h1 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
+            Data Urbanism <span class="text-orange-500">.</span>
+          </h1>
+          <p class="text-lg text-slate-300 max-w-3xl mt-2">
+            Scaling enterprise digital infrastructure with the mindset and generational rigor of a civic city builder. Grounded in the Royal Institute of British Architects (RIBA) Plan of Work.
+          </p>
+        </div>
+        <div class="flex items-center gap-3">
+          <button id="speakerNotesToggleBtn" class="btn-secondary px-4 py-2 text-xs flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-orange-400 animate-pulse"></span>
+            <span id="notesToggleText">Show Speaker Notes</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Interactive Slide Showcase Deck -->
+    <div class="glass-card p-4 sm:p-6 mb-8 relative overflow-hidden">
+      <!-- Top Slide Controls & Counter -->
+      <div class="flex items-center justify-between pb-4 border-b border-white/10 mb-4">
+        <div class="flex items-center gap-3">
+          <span id="slideStageBadge" class="badge-orange font-mono">Stage 0: Strategic Definition</span>
+          <span id="slideLocationPill" class="text-xs font-mono text-slate-400">Gardens by the Bay, Singapore</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <span id="slideCounter" class="text-xs font-mono text-slate-400">01 / 15</span>
+          <div class="flex items-center gap-1">
+            <button id="prevSlideBtn" class="p-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-white transition-all disabled:opacity-30" title="Previous Slide (Left Arrow)">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+            </button>
+            <button id="nextSlideBtn" class="p-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-white transition-all disabled:opacity-30" title="Next Slide (Right Arrow)">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide Main Display (Split Grid: Left Image, Right Context) -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        
+        <!-- Left: Image Viewer with architectural overlay -->
+        <div class="lg:col-span-7 relative group rounded-2xl overflow-hidden bg-slate-950/80 border border-white/10 shadow-2xl">
+          <div class="aspect-[16/10] relative flex items-center justify-center bg-slate-950">
+            <img id="slideImg" src="/images/data-urbanism/image3.jpg" alt="Data Urbanism Slide" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-transparent to-transparent pointer-events-none"></div>
+            
+            <!-- Bottom Image Caption Badge -->
+            <div class="absolute bottom-4 left-4 right-4 flex items-center justify-between text-xs font-mono text-slate-300 pointer-events-none">
+              <span id="imgOverlayLocation" class="bg-slate-950/80 px-3 py-1 rounded-md border border-white/10 backdrop-blur">
+                Gardens by the Bay, Singapore
+              </span>
+              <span class="bg-blue-600/80 text-white px-2 py-0.5 rounded text-[10px] font-bold">
+                RIBA Benchmark
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Slide Narrative & Concept breakdown -->
+        <div class="lg:col-span-5 flex flex-col justify-between space-y-6">
+          <div>
+            <div class="text-xs font-mono uppercase tracking-wider text-orange-400 font-bold mb-1" id="slideConceptTag">
+              Civic Infrastructure Mindset
+            </div>
+            <h2 id="slideHeading" class="text-2xl sm:text-3xl font-bold text-white mb-2 leading-tight">
+              Data Urbanism
+            </h2>
+            <p id="slideSubheading" class="text-base text-slate-300 font-medium leading-relaxed mb-6">
+              Scaling digital infrastructure with the mindset of a city builder.
+            </p>
+
+            <!-- Architectural Takeaway Box -->
+            <div class="p-4 rounded-xl bg-slate-900/90 border border-white/10 space-y-2">
+              <div class="flex items-center gap-2 text-xs font-mono text-sky-400 font-semibold uppercase">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                <span>Enterprise Analytics Parallel</span>
+              </div>
+              <p id="slideAnalyticsParallel" class="text-xs text-slate-300 leading-relaxed">
+                Just as modern cities cannot survive on ad-hoc shacks and uncoordinated pipelines, enterprise data stacks require rigorous civic zoning, decoupled supply chains, and load-bearing semantic contracts.
+              </p>
+            </div>
+          </div>
+
+          <!-- Quick Navigation Dots -->
+          <div class="pt-4 border-t border-white/10 flex items-center justify-between">
+            <span class="text-xs font-mono text-slate-400">Use arrow keys or click thumbnails below</span>
+            <div class="flex gap-1.5" id="slideDots"></div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ================= SPEAKER NOTES DRAWER ================= -->
+      <div id="speakerNotesDrawer" class="mt-6 pt-6 border-t border-white/10 bg-slate-950/60 -mx-4 -mb-4 sm:-mx-6 sm:-mb-6 p-6 transition-all duration-300">
+        <div class="flex items-center justify-between mb-3">
+          <div class="flex items-center gap-2">
+            <span class="text-base">🎙️</span>
+            <span class="text-xs font-mono uppercase tracking-wider text-orange-400 font-bold">Steve's Verbatim Presentation Commentary</span>
+            <span class="text-[11px] font-mono text-slate-500">From live address</span>
+          </div>
+          <button id="closeNotesBtn" class="text-xs text-slate-400 hover:text-white">Close</button>
+        </div>
+        <div id="speakerNotesContent" class="text-sm text-slate-300 font-normal leading-relaxed space-y-3 max-h-60 overflow-y-auto pr-2">
+          <!-- Loaded dynamically -->
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Thumbnail Strip Carousel -->
+    <div class="mb-16">
+      <div class="text-xs font-mono uppercase tracking-wider text-slate-400 mb-3 px-1 flex items-center justify-between">
+        <span>Slide Index (15 Slides)</span>
+        <span class="text-slate-500">Click any slide to jump</span>
+      </div>
+      <div class="grid grid-cols-3 sm:grid-cols-5 md:grid-cols-8 gap-2" id="thumbnailStrip">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+
+    <!-- ================= THE 8 RIBA STAGES ARCHITECTURAL TABLE ================= -->
+    <section class="glass-card p-6 sm:p-8 mb-16">
+      <div class="max-w-3xl mb-8">
+        <div class="text-xs font-mono font-bold tracking-widest text-orange-400 uppercase mb-2">Architectural Blueprint</div>
+        <h2 class="text-2xl sm:text-4xl font-bold text-white tracking-tight">The 8 RIBA Stages Applied to Enterprise Analytics</h2>
+        <p class="text-sm text-slate-300 mt-2">
+          How structural civic architecture informs every phase of the modern data engineering lifecycle.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        
+        <!-- Stage 0 -->
+        <div class="p-4 rounded-xl bg-slate-900/80 border border-white/10 hover:border-orange-500/50 transition-all">
+          <div class="flex items-center justify-between mb-2">
+            <span class="font-mono text-xs font-bold text-orange-400">STAGE 00</span>
+            <span class="text-[10px] font-mono text-slate-400">Strategic</span>
+          </div>
+          <div class="text-base font-bold text-white mb-1">Fixed Units of Truth</div>
+          <div class="text-xs text-slate-400 mb-3">Lego House (Surrey)</div>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Resolve fundamental contradictions before drawing code. Balance executive vision, physics of computation, and business reality.
+          </p>
+        </div>
+
+        <!-- Stage 1 -->
+        <div class="p-4 rounded-xl bg-slate-900/80 border border-white/10 hover:border-orange-500/50 transition-all">
+          <div class="flex items-center justify-between mb-2">
+            <span class="font-mono text-xs font-bold text-orange-400">STAGE 01</span>
+            <span class="text-[10px] font-mono text-slate-400">Feasibility</span>
+          </div>
+          <div class="text-base font-bold text-white mb-1">Heritage Audit</div>
+          <div class="text-xs text-slate-400 mb-3">Waterloo International</div>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Surveying legacy "ghost platforms" and unmaintained reports to unlock future potential without tearing down structural foundations.
+          </p>
+        </div>
+
+        <!-- Stage 2 -->
+        <div class="p-4 rounded-xl bg-slate-900/80 border border-white/10 hover:border-orange-500/50 transition-all">
+          <div class="flex items-center justify-between mb-2">
+            <span class="font-mono text-xs font-bold text-orange-400">STAGE 02</span>
+            <span class="text-[10px] font-mono text-slate-400">Concept</span>
+          </div>
+          <div class="text-base font-bold text-white mb-1">Mathematical Logic</div>
+          <div class="text-xs text-slate-400 mb-3">Al Janoub Stadium</div>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Translating complex stakeholder visions and organic curves into rigorous, buildable algorithmic models and SQL logic.
+          </p>
+        </div>
+
+        <!-- Stage 3 -->
+        <div class="p-4 rounded-xl bg-slate-900/80 border border-white/10 hover:border-orange-500/50 transition-all">
+          <div class="flex items-center justify-between mb-2">
+            <span class="font-mono text-xs font-bold text-orange-400">STAGE 03</span>
+            <span class="text-[10px] font-mono text-slate-400">Spatial</span>
+          </div>
+          <div class="text-base font-bold text-white mb-1">Digital Twins</div>
+          <div class="text-xs text-slate-400 mb-3">Qasr al Hosn (Abu Dhabi)</div>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            LIDAR point-cloud scans mapping exact historical reality. Data models built as living telemetry twins rather than static hand-sketches.
+          </p>
+        </div>
+
+        <!-- Stage 4 -->
+        <div class="p-4 rounded-xl bg-slate-900/80 border border-white/10 hover:border-orange-500/50 transition-all">
+          <div class="flex items-center justify-between mb-2">
+            <span class="font-mono text-xs font-bold text-orange-400">STAGE 04</span>
+            <span class="text-[10px] font-mono text-slate-400">Technical</span>
+          </div>
+          <div class="text-base font-bold text-white mb-1">Precise Blueprints</div>
+          <div class="text-xs text-slate-400 mb-3">Schiphol Pier A</div>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Coordinating high-stakes operational flow: baggage, passengers, fueling, and secure border checkpoints without collision.
+          </p>
+        </div>
+
+        <!-- Stage 5 -->
+        <div class="p-4 rounded-xl bg-slate-900/80 border border-white/10 hover:border-orange-500/50 transition-all">
+          <div class="flex items-center justify-between mb-2">
+            <span class="font-mono text-xs font-bold text-orange-400">STAGE 05</span>
+            <span class="text-[10px] font-mono text-slate-400">Construction</span>
+          </div>
+          <div class="text-base font-bold text-white mb-1">Supply Chain of Truth</div>
+          <div class="text-xs text-slate-400 mb-3">Shell Modular DfMA</div>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Design for Manufacture and Assembly (DfMA). Prefabricated modular blocks assembled deterministically with zero on-site guesswork.
+          </p>
+        </div>
+
+        <!-- Stage 6 -->
+        <div class="p-4 rounded-xl bg-slate-900/80 border border-white/10 hover:border-orange-500/50 transition-all">
+          <div class="flex items-center justify-between mb-2">
+            <span class="font-mono text-xs font-bold text-orange-400">STAGE 06</span>
+            <span class="text-[10px] font-mono text-slate-400">Handover</span>
+          </div>
+          <div class="text-base font-bold text-white mb-1">Operational Readiness</div>
+          <div class="text-xs text-slate-400 mb-3">Istanbul New ATC</div>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Handing over a living, active operating system with full runbooks, monitoring, and automated alerts rather than an abandoned PDF.
+          </p>
+        </div>
+
+        <!-- Stage 7 -->
+        <div class="p-4 rounded-xl bg-slate-900/80 border border-white/10 hover:border-orange-500/50 transition-all">
+          <div class="flex items-center justify-between mb-2">
+            <span class="font-mono text-xs font-bold text-orange-400">STAGE 07</span>
+            <span class="text-[10px] font-mono text-slate-400">In Use</span>
+          </div>
+          <div class="text-base font-bold text-white mb-1">Living Ecosystem</div>
+          <div class="text-xs text-slate-400 mb-3">Laguna Honda Hospital</div>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Post-occupancy evaluation: monitoring adoption, query latencies, user ergonomics, and human health metrics over multi-year horizons.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= CORE PILLARS: FURNITURE VS FOUNDATION ================= -->
+    <section class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+      
+      <div class="p-6 rounded-2xl glass-card">
+        <div class="text-xs font-mono text-orange-400 font-bold uppercase mb-2">Core Philosophy</div>
+        <h3 class="text-xl font-bold text-white mb-3">Furniture vs. Foundation</h3>
+        <p class="text-sm text-slate-300 leading-relaxed mb-4">
+          A dashboard filter is furniture. A metric definition is a load-bearing foundation. If you move a sofa, nobody gets hurt; if you knock down a load-bearing wall without structural steel, the entire house collapses.
+        </p>
+        <div class="text-xs font-mono text-slate-400">Guildford Residential Case</div>
+      </div>
+
+      <div class="p-6 rounded-2xl glass-card">
+        <div class="text-xs font-mono text-sky-400 font-bold uppercase mb-2">Leadership Discipline</div>
+        <h3 class="text-xl font-bold text-white mb-3">The Wayfinding Gap</h3>
+        <p class="text-sm text-slate-300 leading-relaxed mb-4">
+          Between executive ambition and engineering execution lies the "fog of delivery". The RIBA Client Advisor acts as the translator who ensures the final outcome matches the original intent.
+        </p>
+        <div class="text-xs font-mono text-slate-400">Frenson Estate Case</div>
+      </div>
+
+      <div class="p-6 rounded-2xl glass-card">
+        <div class="text-xs font-mono text-emerald-400 font-bold uppercase mb-2">Generational Sustainability</div>
+        <h3 class="text-xl font-bold text-white mb-3">Adaptive Reuse</h3>
+        <p class="text-sm text-slate-300 leading-relaxed mb-4">
+          Like the U2 360 "Claw" concert stage transformed into permanent civic architecture, modular data pipelines should outlive transient BI tools and serve enterprise operations for decades.
+        </p>
+        <div class="text-xs font-mono text-slate-400">U2 360 Tour "The Claw"</div>
+      </div>
+
+    </section>
+
+    <!-- Bottom CTAs -->
+    <div class="p-8 rounded-2xl bg-gradient-to-r from-slate-900 via-blue-950/40 to-slate-900 border border-white/10 flex flex-col sm:flex-row items-center justify-between gap-6">
+      <div>
+        <h3 class="text-xl font-bold text-white mb-1">Ready to inspect the live data implementations?</h3>
+        <p class="text-sm text-slate-300">Explore AvDB Aviation Analytics or the Career Command Center agent.</p>
+      </div>
+      <div class="flex items-center gap-3">
+        <a href="/avdb" class="btn-orange px-5 py-2.5 text-sm">
+          AvDB Platform →
+        </a>
+        <a href="/" class="btn-secondary px-5 py-2.5 text-sm">
+          Return to Hub
+        </a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="border-t border-white/10 py-12 glass-surface">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+      <div class="flex items-center gap-3">
+        <div class="w-8 h-8 rounded-lg bg-blue-600 flex items-center justify-center font-mono font-bold text-white text-xs">SR</div>
+        <div class="text-xs text-slate-400">
+          © 2026 Steve Riffe · <a href="https://portfolio.riffe.co.uk" class="hover:text-white">portfolio.riffe.co.uk</a>
+        </div>
+      </div>
+      <div class="flex items-center gap-6 text-xs text-slate-400 font-mono">
+        <a href="https://github.com/steveriffe" target="_blank" class="hover:text-white">GitHub</a>
+        <a href="https://linkedin.com/in/steveriffe" target="_blank" class="hover:text-white">LinkedIn</a>
+        <a href="mailto:steve@riffe.co.uk" class="hover:text-white">steve@riffe.co.uk</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= CLIENT JAVASCRIPT ================= -->
+  <script>
+    let slides = [];
+    let currentIndex = 0;
+
+    // Slide Concept & Analytics Parallel mapping
+    const conceptDetails = {
+      1: {
+        concept: "Civic Infrastructure Mindset",
+        parallel: "Just as modern cities cannot survive on ad-hoc shacks and uncoordinated pipelines, enterprise data stacks require rigorous civic zoning, decoupled supply chains, and load-bearing semantic contracts."
+      },
+      2: {
+        concept: "Human-Centric Ergonomics",
+        parallel: "Massive timber frames and natural light respond to humans rather than forcing humans into rigid boxes. Data systems must adapt to human decision workflows, not demand spreadsheet contortions."
+      },
+      3: {
+        concept: "From Blueprints to Outcomes",
+        parallel: "Moving past linear Waterfall delivery. Measuring success not merely by whether a dashboard 'stood up on time', but whether it transformed business decisions and operational outcomes."
+      },
+      4: {
+        concept: "Fixed Units of Truth (Stage 0)",
+        parallel: "Building a real house from 3.3M Lego bricks requires harmonizing three truths: Executive Vision, Physical Feasibility, and Reality. In data, this is the semantic definition that prevents metric drift."
+      },
+      5: {
+        concept: "Heritage Audit (Stage 1)",
+        parallel: "Surveying five 'ghost platforms' at Waterloo. Rather than ripping out legacy systems, an architectural audit identifies dormant structural value and unlocks capacity."
+      },
+      6: {
+        concept: "Mathematical Logic (Stage 2)",
+        parallel: "Zaha Hadid's 'unbuildable' curves were made possible through computational parametric modeling. Enterprise analytics requires turning intuitive executive vision into mathematically deterministic SQL."
+      },
+      7: {
+        concept: "Digital Twins & Point Clouds (Stage 3)",
+        parallel: "Qasr al Hosn fort mapped via millions of LIDAR points. Modern data pipelines must be living digital twins of the enterprise, reflecting ground reality with continuous telemetry."
+      },
+      8: {
+        concept: "Precise Blueprints (Stage 4)",
+        parallel: "Adding Pier A to an operating airport like Schiphol requires zero-downtime flight-deck precision. Data migrations must maintain 100% production uptime without losing telemetry."
+      },
+      9: {
+        concept: "Supply Chain of Truth (Stage 5)",
+        parallel: "Shell prefabricated modular fuel stations built offsite from pure data. In data engineering, dbt models and semantic metrics become modular prefabricated components."
+      },
+      10: {
+        concept: "Operational Readiness (Stage 6)",
+        parallel: "Delivering the Istanbul New ATC tower. Handing over a living, active operating system with telemetry, runbooks, and alerting rather than dumping an unmonitored report on users."
+      },
+      11: {
+        concept: "Living Ecosystem (Stage 7)",
+        parallel: "Laguna Honda Hospital post-occupancy care. Measuring long-term adoption, query performance, and user satisfaction over years rather than celebrating a single launch day."
+      },
+      12: {
+        concept: "Integrated Delivery Summary",
+        parallel: "Synthesis of the 8 RIBA stages into modern data architecture. Moving from temporary ad-hoc hacks to load-bearing enterprise engineering."
+      },
+      13: {
+        concept: "Furniture vs Foundation",
+        parallel: "Cosmetic dashboard tweaks (changing a filter) are furniture. Moving a semantic grain or altering an underwriting formula is a load-bearing foundation that impacts systemic integrity."
+      },
+      14: {
+        concept: "The Wayfinding Gap",
+        parallel: "The RIBA Client Advisor bridges the chasm between architectural vision and contractor execution, keeping multi-disciplinary teams aligned on the ultimate business objective."
+      },
+      15: {
+        concept: "The Permanence of Temporary",
+        parallel: "The U2 360 'Claw' temporary stage adapted into a permanent civic pavilion. Well-architected analytics pipelines often outlast the specific front-end visualization tools that spawned them."
+      }
+    };
+
+    async function loadData() {
+      try {
+        const res = await fetch('/data/data_urbanism.json');
+        slides = await res.json();
+        renderThumbnails();
+        renderDots();
+        showSlide(0);
+      } catch (err) {
+        console.error('Failed to load slides data:', err);
+      }
+    }
+
+    function showSlide(index) {
+      if (index < 0 || index >= slides.length) return;
+      currentIndex = index;
+      const slide = slides[index];
+
+      // Update counter & badge
+      document.getElementById('slideCounter').innerText = `${String(index + 1).padStart(2, '0')} / ${String(slides.length).padStart(2, '0')}`;
+      
+      const num = slide.slideNumber;
+      const details = conceptDetails[num] || { concept: "Architectural Discipline", parallel: "Civic engineering standards." };
+      
+      // Determine stage name
+      let stageName = "Foundations";
+      if (num === 4) stageName = "Stage 0: Strategic Definition";
+      else if (num === 5) stageName = "Stage 1: Feasibility & Site Survey";
+      else if (num === 6) stageName = "Stage 2: Concept Design";
+      else if (num === 7) stageName = "Stage 3: Spatial Coordination";
+      else if (num === 8) stageName = "Stage 4: Technical Design";
+      else if (num === 9) stageName = "Stage 5: Manufacturing & Construction";
+      else if (num === 10) stageName = "Stage 6: Handover";
+      else if (num === 11) stageName = "Stage 7: In Use";
+      else if (num >= 13) stageName = "Core Principles";
+
+      document.getElementById('slideStageBadge').innerText = stageName;
+      document.getElementById('slideConceptTag').innerText = details.concept;
+
+      // Extract texts
+      const title = slide.texts[0] || "Data Urbanism";
+      const subtitle = slide.texts[1] || "";
+      const location = slide.texts[2] || "Civic Systems";
+
+      document.getElementById('slideHeading').innerText = title;
+      document.getElementById('slideSubheading').innerText = subtitle;
+      document.getElementById('slideLocationPill').innerText = location;
+      document.getElementById('imgOverlayLocation').innerText = location;
+      document.getElementById('slideAnalyticsParallel').innerText = details.parallel;
+
+      // Image
+      const imgElem = document.getElementById('slideImg');
+      if (slide.image) {
+        imgElem.src = `/images/data-urbanism/${slide.image}`;
+        imgElem.parentElement.parentElement.classList.remove('hidden');
+      } else {
+        imgElem.src = '/images/data-urbanism/image3.jpg'; // fallback
+      }
+
+      // Speaker Notes
+      const notesContainer = document.getElementById('speakerNotesContent');
+      if (slide.speakerNote && slide.speakerNote.trim()) {
+        notesContainer.innerHTML = `<p class="leading-relaxed">${slide.speakerNote.replace(/\. /g, '.<br/><br/>')}</p>`;
+      } else {
+        notesContainer.innerHTML = '<p class="italic text-slate-500">Summary slide connecting frameworks.</p>';
+      }
+
+      // Update active thumbnail and dot
+      document.querySelectorAll('.thumb-btn').forEach((btn, i) => {
+        if (i === index) {
+          btn.classList.add('border-orange-500', 'ring-2', 'ring-orange-500/50');
+        } else {
+          btn.classList.remove('border-orange-500', 'ring-2', 'ring-orange-500/50');
+        }
+      });
+
+      document.querySelectorAll('.dot-indicator').forEach((dot, i) => {
+        if (i === index) {
+          dot.className = 'dot-indicator w-6 h-1.5 rounded-full bg-orange-500 transition-all';
+        } else {
+          dot.className = 'dot-indicator w-1.5 h-1.5 rounded-full bg-slate-700 hover:bg-slate-500 transition-all';
+        }
+      });
+
+      // Enable/disable buttons
+      document.getElementById('prevSlideBtn').disabled = (index === 0);
+      document.getElementById('nextSlideBtn').disabled = (index === slides.length - 1);
+    }
+
+    function renderThumbnails() {
+      const container = document.getElementById('thumbnailStrip');
+      container.innerHTML = '';
+      slides.forEach((slide, i) => {
+        const btn = document.createElement('button');
+        btn.className = `thumb-btn p-1 rounded-lg bg-slate-900 border border-white/10 overflow-hidden transition-all text-left group ${i === 0 ? 'border-orange-500 ring-2 ring-orange-500/50' : ''}`;
+        btn.onclick = () => showSlide(i);
+
+        const imgSrc = slide.image ? `/images/data-urbanism/${slide.image}` : '/images/data-urbanism/image3.jpg';
+        btn.innerHTML = `
+          <div class="aspect-video relative rounded overflow-hidden mb-1 bg-slate-950">
+            <img src="${imgSrc}" class="w-full h-full object-cover group-hover:scale-110 transition-transform">
+            <div class="absolute bottom-0 left-0 bg-slate-950/80 px-1 font-mono text-[9px] text-orange-400 font-bold">#${i+1}</div>
+          </div>
+          <div class="text-[10px] font-mono text-slate-300 truncate px-1">${slide.texts[0] || 'Slide'}</div>
+        `;
+        container.appendChild(btn);
+      });
+    }
+
+    function renderDots() {
+      const container = document.getElementById('slideDots');
+      container.innerHTML = '';
+      slides.forEach((_, i) => {
+        const dot = document.createElement('button');
+        dot.className = `dot-indicator ${i === 0 ? 'w-6 h-1.5 rounded-full bg-orange-500' : 'w-1.5 h-1.5 rounded-full bg-slate-700'}`;
+        dot.onclick = () => showSlide(i);
+        container.appendChild(dot);
+      });
+    }
+
+    // Event Listeners
+    document.getElementById('prevSlideBtn').addEventListener('click', () => showSlide(currentIndex - 1));
+    document.getElementById('nextSlideBtn').addEventListener('click', () => showSlide(currentIndex + 1));
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowLeft') showSlide(currentIndex - 1);
+      if (e.key === 'ArrowRight') showSlide(currentIndex + 1);
+    });
+
+    const notesDrawer = document.getElementById('speakerNotesDrawer');
+    const notesToggleBtn = document.getElementById('speakerNotesToggleBtn');
+    const notesToggleText = document.getElementById('notesToggleText');
+    let notesOpen = true;
+
+    notesToggleBtn.addEventListener('click', () => {
+      notesOpen = !notesOpen;
+      notesDrawer.classList.toggle('hidden', !notesOpen);
+      notesToggleText.innerText = notesOpen ? 'Hide Speaker Notes' : 'Show Speaker Notes';
+    });
+
+    document.getElementById('closeNotesBtn').addEventListener('click', () => {
+      notesOpen = false;
+      notesDrawer.classList.add('hidden');
+      notesToggleText.innerText = 'Show Speaker Notes';
+    });
+
+    // Initialize
+    loadData();
+  </script>
+</body>
+</html>

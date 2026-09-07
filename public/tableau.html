@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tableau Public Showcase | Steve Riffe Certified Professional</title>
+  <meta name="description" content="Selected interactive Tableau Public visualizations by Steve Riffe, Tableau Certified Professional: Marriage Equality, Wildfire Path Prediction POC, Sales Map Drilldown, and Profitability by Agreement.">
+  <link rel="icon" type="image/png" href="/images/apple-touch-icon.png">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Tableau Embedding API v3 -->
+  <script type="module" src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"></script>
+</head>
+<body class="selection:bg-orange-500 selection:text-white">
+
+  <!-- ================= TOP NAVIGATION ================= -->
+  <header class="fixed top-0 left-0 right-0 z-50 glass-surface border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-600 to-slate-900 border border-blue-400/30 flex items-center justify-center font-mono font-bold text-white shadow-lg group-hover:border-orange-500 transition-colors">
+          SR
+        </div>
+        <div>
+          <div class="font-bold text-white text-lg tracking-tight group-hover:text-orange-400 transition-colors">Steve Riffe</div>
+          <div class="text-xs font-mono text-slate-400">Tableau Certified Professional</div>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-300">
+        <a href="/" class="hover:text-white transition-colors">Home Portal</a>
+        <a href="/data-urbanism" class="hover:text-white transition-colors">Data Urbanism</a>
+        <a href="/avdb" class="hover:text-white transition-colors">AvDB Aviation</a>
+        <a href="/career" class="hover:text-white transition-colors">Career Radar</a>
+        <a href="/music-roast" class="hover:text-white transition-colors">Music Roast</a>
+        <a href="/tableau" class="text-orange-400 font-semibold border-b-2 border-orange-500 pb-0.5">Tableau</a>
+        <a href="/resume" class="hover:text-white transition-colors">Resume</a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="hidden sm:flex items-center gap-3">
+        <a href="/" class="btn-secondary px-4 py-2 text-xs">
+          ← Back to Portal
+        </a>
+        <a href="https://public.tableau.com/app/profile/steveriffe" target="_blank" rel="noopener noreferrer" class="btn-orange px-4 py-2 text-xs">
+          Tableau Public Profile ↗
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= MAIN SHOWCASE CONTENT ================= -->
+  <main class="pt-28 pb-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <!-- Breadcrumb & Header -->
+    <div class="mb-10">
+      <div class="flex items-center gap-2 text-xs font-mono text-slate-400 mb-2">
+        <a href="/" class="hover:text-white">PORTAL</a>
+        <span>/</span>
+        <span class="text-orange-400">TABLEAU PUBLIC INTERACTIVE EMBEDS</span>
+      </div>
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+        <div>
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/30 text-xs font-mono text-sky-400 mb-3">
+            <span class="w-2 h-2 rounded-full bg-sky-400 animate-pulse"></span>
+            <span>Tableau Certified Professional · Slalom & Pacific Life Lead</span>
+          </div>
+          <h1 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
+            Selected Tableau Visualizations <span class="text-orange-500">.</span>
+          </h1>
+          <p class="text-lg text-slate-300 max-w-3xl mt-2">
+            A curated collection of public dashboards demonstrating spatial modeling, longitudinal social timelines, predictive concept vectors, and enterprise P&L profitability.
+          </p>
+        </div>
+        <div class="flex items-center gap-3">
+          <a href="https://public.tableau.com/app/profile/steveriffe" target="_blank" rel="noopener noreferrer" class="btn-secondary px-4 py-2.5 text-xs flex items-center gap-2">
+            <span>All Workbooks on Tableau Public</span>
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Viz Selector Tabs -->
+    <div class="glass-card p-2 mb-6 flex flex-wrap gap-2" id="vizTabs">
+      <button onclick="switchViz('marriage')" class="viz-tab flex-1 min-w-[200px] text-left p-3.5 rounded-xl border transition-all bg-orange-500/10 border-orange-500/40 text-white" id="tab-marriage">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-mono font-bold text-orange-400">01 · SOCIAL & POLICY</span>
+          <span class="text-[10px] font-mono text-slate-400">Timeline</span>
+        </div>
+        <div class="text-sm font-bold text-white mt-1">Marriage Equality Timeline</div>
+      </button>
+
+      <button onclick="switchViz('wildfire')" class="viz-tab flex-1 min-w-[200px] text-left p-3.5 rounded-xl border transition-all bg-slate-900 border-white/10 text-slate-300 hover:text-white" id="tab-wildfire">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-mono font-bold text-sky-400">02 · SPATIAL PREDICTION</span>
+          <span class="badge-tech text-[10px]">POC</span>
+        </div>
+        <div class="text-sm font-bold text-white mt-1">Wildfire Path Prediction</div>
+      </button>
+
+      <button onclick="switchViz('sales')" class="viz-tab flex-1 min-w-[200px] text-left p-3.5 rounded-xl border transition-all bg-slate-900 border-white/10 text-slate-300 hover:text-white" id="tab-sales">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-mono font-bold text-emerald-400">03 · ENTERPRISE SALES</span>
+          <span class="text-[10px] font-mono text-slate-400">Geographic Drill</span>
+        </div>
+        <div class="text-sm font-bold text-white mt-1">Sales Maps Drilldown</div>
+      </button>
+
+      <button onclick="switchViz('profitability')" class="viz-tab flex-1 min-w-[200px] text-left p-3.5 rounded-xl border transition-all bg-slate-900 border-white/10 text-slate-300 hover:text-white" id="tab-profitability">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-mono font-bold text-amber-400">04 · FINANCIAL P&L</span>
+          <span class="text-[10px] font-mono text-slate-400">Contract Analysis</span>
+        </div>
+        <div class="text-sm font-bold text-white mt-1">Profitability by Agreement</div>
+      </button>
+    </div>
+
+    <!-- Active Viz Detail & Description Card -->
+    <div class="glass-card p-6 mb-6">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+        <div>
+          <div class="flex items-center gap-2 mb-1">
+            <span id="vizTag" class="badge-orange">Longitudinal Policy Study</span>
+            <span id="vizDirectLink" class="text-xs font-mono text-slate-400">public.tableau.com/views/MarriageEquality_16985250633250</span>
+          </div>
+          <h2 id="vizTitle" class="text-xl sm:text-2xl font-bold text-white">Marriage Equality Timeline</h2>
+          <p id="vizDesc" class="text-xs sm:text-sm text-slate-300 mt-1 max-w-3xl leading-relaxed">
+            An interactive historical narrative detailing state-by-state legislative and judicial milestones leading up to landmark civil rights rulings in the United States.
+          </p>
+        </div>
+        <div class="flex items-center gap-3 shrink-0">
+          <a id="vizExternalBtn" href="https://public.tableau.com/app/profile/steveriffe/viz/MarriageEquality_16985250633250/MarriageEqualityTimeline?showOnboarding=true" target="_blank" rel="noopener noreferrer" class="btn-orange px-4 py-2 text-xs flex items-center gap-1.5">
+            <span>Open in Fullscreen on Tableau Public</span>
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Interactive Tableau Embed Canvas -->
+    <div class="glass-card rounded-2xl overflow-hidden border border-white/10 shadow-2xl relative bg-slate-950">
+      
+      <!-- Interactive Container -->
+      <div id="tableauContainer" class="w-full min-h-[750px] sm:min-h-[850px] relative">
+        <tableau-viz id="tableauViz" 
+          src="https://public.tableau.com/views/MarriageEquality_16985250633250/MarriageEqualityTimeline" 
+          toolbar="bottom" 
+          hide-tabs="true"
+          class="w-full h-full min-h-[750px] sm:min-h-[850px] block">
+        </tableau-viz>
+      </div>
+
+      <!-- Bottom Status Strip -->
+      <div class="p-3 bg-slate-900/80 border-t border-white/10 flex items-center justify-between text-xs font-mono text-slate-400">
+        <div class="flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+          <span>Tableau Embedding API v3 Active</span>
+        </div>
+        <div class="text-slate-500">
+          Author: Steve Riffe (Certified Professional)
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="border-t border-white/10 py-12 glass-surface">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+      <div class="flex items-center gap-3">
+        <div class="w-8 h-8 rounded-lg bg-blue-600 flex items-center justify-center font-mono font-bold text-white text-xs">SR</div>
+        <div class="text-xs text-slate-400">
+          © 2026 Steve Riffe · <a href="https://portfolio.riffe.co.uk" class="hover:text-white">portfolio.riffe.co.uk</a>
+        </div>
+      </div>
+      <div class="flex items-center gap-6 text-xs text-slate-400 font-mono">
+        <a href="https://github.com/steveriffe" target="_blank" class="hover:text-white">GitHub</a>
+        <a href="https://linkedin.com/in/steveriffe" target="_blank" class="hover:text-white">LinkedIn</a>
+        <a href="mailto:steve@riffe.co.uk" class="hover:text-white">steve@riffe.co.uk</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= TAB SWITCHING JAVASCRIPT ================= -->
+  <script>
+    const vizConfigs = {
+      marriage: {
+        title: "Marriage Equality Timeline",
+        tag: "Longitudinal Policy Study",
+        desc: "An interactive historical narrative detailing state-by-state legislative and judicial milestones leading up to landmark civil rights rulings in the United States. Showcases time-series filtering and custom polygon maps.",
+        src: "https://public.tableau.com/views/MarriageEquality_16985250633250/MarriageEqualityTimeline",
+        externalUrl: "https://public.tableau.com/app/profile/steveriffe/viz/MarriageEquality_16985250633250/MarriageEqualityTimeline?showOnboarding=true"
+      },
+      wildfire: {
+        title: "Wildfire Path Prediction - Proof of Concept",
+        tag: "Spatial Vector Modeling",
+        desc: "Proof of concept model combining topographic elevation layers, historical wind vectors, and fuel moisture indices to project wildfire perimeter spread trajectories in California.",
+        src: "https://public.tableau.com/views/Wildfire_path_concept/WildfirePathPrediction-POC",
+        externalUrl: "https://public.tableau.com/views/Wildfire_path_concept/WildfirePathPrediction-POC?:language=en-US&:sid=&:redirect=auth&showOnboarding=true&:display_count=n&:origin=viz_share_link"
+      },
+      sales: {
+        title: "Sales Maps Drilldown",
+        tag: "Enterprise Territorial Analytics",
+        desc: "Hierarchical multi-tier geographic sales analysis: zooming from national territory overview into regional clusters, metropolitan statistical areas (MSAs), and account-level conversion rates.",
+        src: "https://public.tableau.com/views/SalesMapDrilldown/SalesMaps",
+        externalUrl: "https://public.tableau.com/views/SalesMapDrilldown/SalesMaps"
+      },
+      profitability: {
+        title: "Profitability by Agreement - Demo",
+        tag: "Financial Contract Performance",
+        desc: "Corporate contract economics dashboard tracking gross margins, variable service delivery costs, volume discounts, and net realized margin across multi-year client agreements.",
+        src: "https://public.tableau.com/views/ProfitabilitybyAgreement-Demo/ProfitabilitybyAgreement",
+        externalUrl: "https://public.tableau.com/views/ProfitabilitybyAgreement-Demo/ProfitabilitybyAgreement"
+      }
+    };
+
+    function switchViz(key) {
+      const config = vizConfigs[key];
+      if (!config) return;
+
+      // Update Tabs styling
+      document.querySelectorAll('.viz-tab').forEach(btn => {
+        btn.className = "viz-tab flex-1 min-w-[200px] text-left p-3.5 rounded-xl border transition-all bg-slate-900 border-white/10 text-slate-300 hover:text-white";
+      });
+      const activeBtn = document.getElementById(`tab-${key}`);
+      if (activeBtn) {
+        activeBtn.className = "viz-tab flex-1 min-w-[200px] text-left p-3.5 rounded-xl border transition-all bg-orange-500/10 border-orange-500/40 text-white";
+      }
+
+      // Update text
+      document.getElementById('vizTitle').innerText = config.title;
+      document.getElementById('vizTag').innerText = config.tag;
+      document.getElementById('vizDesc').innerText = config.desc;
+      document.getElementById('vizDirectLink').innerText = config.src.replace('https://', '');
+      document.getElementById('vizExternalBtn').href = config.externalUrl;
+
+      // Replace or update tableau-viz element
+      const container = document.getElementById('tableauContainer');
+      container.innerHTML = `
+        <tableau-viz id="tableauViz" 
+          src="${config.src}" 
+          toolbar="bottom" 
+          hide-tabs="true"
+          class="w-full h-full min-h-[750px] sm:min-h-[850px] block">
+        </tableau-viz>
+      `;
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Steve Riffe | Analytics Delivery Leader & Solutions Architect</title>
+  <meta name="description" content="Portfolio of Steve Riffe: Analytics Delivery Leader, Solutions Architect, and Product Strategist. Creator of the Data Urbanism framework, pioneer in agentic AI analytics migration, and builder of load-bearing data systems.">
+  <link rel="icon" type="image/png" href="/images/apple-touch-icon.png">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="selection:bg-orange-500 selection:text-white">
+
+  <!-- ================= TOP NAVIGATION BAR ================= -->
+  <header class="fixed top-0 left-0 right-0 z-50 glass-surface border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Identity -->
+      <a href="/" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-600 to-slate-900 border border-blue-400/30 flex items-center justify-center font-mono font-bold text-white shadow-lg shadow-blue-500/20 group-hover:border-orange-500 transition-colors">
+          SR
+        </div>
+        <div>
+          <div class="font-bold text-white text-lg tracking-tight group-hover:text-orange-400 transition-colors">Steve Riffe</div>
+          <div class="text-xs font-mono text-slate-400">Data Urbanism · Analytics Delivery</div>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-slate-300">
+        <a href="#showcases" class="hover:text-white transition-colors">Project Portals</a>
+        <a href="/data-urbanism" class="hover:text-orange-400 transition-colors">Data Urbanism</a>
+        <a href="/avdb" class="hover:text-orange-400 transition-colors">AvDB Aviation</a>
+        <a href="/career" class="hover:text-orange-400 transition-colors">Career Radar</a>
+        <a href="/music-roast" class="hover:text-orange-400 transition-colors">Apple Music Roast</a>
+        <a href="/tableau" class="hover:text-orange-400 transition-colors">Tableau</a>
+        <a href="/resume" class="hover:text-orange-400 transition-colors">Resume</a>
+      </nav>
+
+      <!-- CTA Buttons -->
+      <div class="hidden lg:flex items-center gap-3">
+        <a href="https://github.com/steveriffe" target="_blank" rel="noopener noreferrer" class="btn-secondary px-3.5 py-2 text-xs" title="GitHub Profile">
+          <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+          <span>GitHub</span>
+        </a>
+        <a href="https://linkedin.com/in/steveriffe" target="_blank" rel="noopener noreferrer" class="btn-secondary px-3.5 py-2 text-xs" title="LinkedIn Profile">
+          <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.25c-.95 0-1.72.78-1.72 1.73s.77 1.73 1.72 1.73c.96 0 1.73-.78 1.73-1.73s-.77-1.73-1.73-1.73Z"/></svg>
+          <span>LinkedIn</span>
+        </a>
+        <a href="mailto:steve@riffe.co.uk" class="btn-orange px-4 py-2 text-xs">
+          Get in Touch
+        </a>
+      </div>
+
+      <!-- Mobile Menu Trigger -->
+      <button id="mobileMenuBtn" class="md:hidden p-2 text-slate-400 hover:text-white" aria-label="Toggle Navigation Menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+
+    </div>
+
+    <!-- Mobile Menu Dropdown -->
+    <div id="mobileMenu" class="hidden md:hidden bg-slate-900 border-b border-white/10 px-4 py-4 space-y-2 text-sm">
+      <a href="/data-urbanism" class="block px-3 py-2 rounded-lg hover:bg-slate-800 text-slate-200">Data Urbanism</a>
+      <a href="/avdb" class="block px-3 py-2 rounded-lg hover:bg-slate-800 text-slate-200">AvDB Aviation Platform</a>
+      <a href="/career" class="block px-3 py-2 rounded-lg hover:bg-slate-800 text-slate-200">Career Radar & Agentic Migration</a>
+      <a href="/music-roast" class="block px-3 py-2 rounded-lg hover:bg-slate-800 text-slate-200">Apple Music Roast</a>
+      <a href="/tableau" class="block px-3 py-2 rounded-lg hover:bg-slate-800 text-slate-200">Tableau Showcase</a>
+      <a href="/resume" class="block px-3 py-2 rounded-lg hover:bg-slate-800 text-slate-200">Resume Highlights</a>
+      <div class="pt-3 border-t border-slate-800 flex gap-2">
+        <a href="https://github.com/steveriffe" target="_blank" class="btn-secondary flex-1 py-2 text-xs">GitHub</a>
+        <a href="mailto:steve@riffe.co.uk" class="btn-orange flex-1 py-2 text-xs">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= HERO SECTION ================= -->
+  <section class="relative pt-32 pb-20 lg:pt-44 lg:pb-32 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="max-w-4xl">
+        
+        <!-- Executive Availability Pill Badge -->
+        <div class="badge-status mb-6">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+          <span class="text-emerald-400 font-semibold tracking-wide">Available</span>
+          <span class="text-slate-600">|</span>
+          <span class="text-slate-300">Open to Select Remote Leadership & Advisory Roles</span>
+        </div>
+
+        <!-- Main Headline -->
+        <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white leading-[1.08] mb-6">
+          Architecting <br class="hidden sm:inline"/>
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-sky-400 to-blue-500">Load-Bearing</span> Enterprise Data Systems.
+        </h1>
+
+        <!-- Executive Narrative Subhead -->
+        <p class="text-lg sm:text-xl text-slate-300 leading-relaxed mb-8 max-w-3xl">
+          Hi, I’m <strong class="text-white">Steve Riffe</strong>. I am an Analytics Delivery Leader, Solutions Architect, and Product Strategist with 10+ years bridging executive strategy and modern cloud engineering.
+          Pioneering <strong class="text-orange-400 font-semibold">Data Urbanism</strong>—treating data infrastructure as civic architecture rather than disposable furniture, empowered by agentic AI automation and flight-deck operational discipline.
+        </p>
+
+        <!-- Primary Actions Bar -->
+        <div class="flex flex-wrap items-center gap-4 mb-12">
+          <a href="/data-urbanism" class="btn-orange px-6 py-3.5 text-sm shadow-xl shadow-orange-500/25">
+            <span>Explore Data Urbanism Framework</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+          </a>
+          <a href="#showcases" class="btn-secondary px-6 py-3.5 text-sm">
+            <span>Inspect Project Walkthroughs</span>
+            <svg class="w-4 h-4 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg>
+          </a>
+          <a href="/resume" class="btn-secondary px-5 py-3.5 text-sm font-mono text-slate-300 hover:text-white">
+            View Resume Highlights
+          </a>
+        </div>
+
+        <!-- High-Signal Metrics Strip -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-8 border-t border-white/10">
+          <div class="p-4 rounded-xl glass-card">
+            <div class="text-2xl sm:text-3xl font-extrabold font-mono text-orange-400">10+ Years</div>
+            <div class="text-xs text-slate-400 mt-1 uppercase tracking-wider font-semibold">Enterprise Delivery</div>
+          </div>
+          <div class="p-4 rounded-xl glass-card">
+            <div class="text-2xl sm:text-3xl font-extrabold font-mono text-sky-400">60+ Shipped</div>
+            <div class="text-xs text-slate-400 mt-1 uppercase tracking-wider font-semibold">Data Products</div>
+          </div>
+          <div class="p-4 rounded-xl glass-card">
+            <div class="text-2xl sm:text-3xl font-extrabold font-mono text-emerald-400">70%+ Saved</div>
+            <div class="text-xs text-slate-400 mt-1 uppercase tracking-wider font-semibold">AI Migration Labor</div>
+          </div>
+          <div class="p-4 rounded-xl glass-card">
+            <div class="text-2xl sm:text-3xl font-extrabold font-mono text-white">54.3M Rows</div>
+            <div class="text-xs text-slate-400 mt-1 uppercase tracking-wider font-semibold">BigQuery Warehouse</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROJECT WALKTHROUGHS & SHOWCASES ================= -->
+  <section id="showcases" class="py-20 border-t border-white/10 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="max-w-3xl mb-14">
+        <div class="text-xs font-mono font-bold tracking-widest text-orange-400 uppercase mb-2">Systems & Geekery Showcase</div>
+        <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight leading-tight">
+          Cohesive Architecture Across Every Domain <span class="text-orange-500">.</span>
+        </h2>
+        <p class="mt-3 text-base sm:text-lg text-slate-300 leading-relaxed">
+          Each portal below represents a full technical explainer and image-rich walkthrough. Built to demonstrate delivery rigor, structural design, and live production capability.
+        </p>
+      </div>
+
+      <!-- The 6 Main Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- CARD 1: DATA URBANISM -->
+        <div class="glass-card accent-orange p-6 sm:p-7 flex flex-col justify-between group">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="badge-orange">Flagship Methodology</span>
+              <span class="text-xs font-mono text-slate-400">15 Slides · Audio Notes</span>
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-orange-400 transition-colors">
+              Data Urbanism
+            </h3>
+            <p class="text-xs font-mono text-sky-400 mb-3">
+              Adapting the RIBA Plan of Work to Analytics
+            </p>
+            <p class="text-sm text-slate-300 leading-relaxed mb-6">
+              Why do 70% of dashboards degrade into digital sprawl? An image-rich presentation deck featuring 16 high-res architectural case studies (Waterloo, Al Janoub, Lego House) and Steve's verbatim presentation narrative.
+            </p>
+          </div>
+          <div class="space-y-3 pt-4 border-t border-white/10">
+            <div class="flex flex-wrap gap-1.5 mb-2">
+              <span class="badge-tech">RIBA Stages 0-7</span>
+              <span class="badge-tech">DfMA</span>
+              <span class="badge-tech">Load-Bearing</span>
+            </div>
+            <a href="/data-urbanism" class="btn-orange w-full py-2.5 text-xs text-center">
+              Explore Interactive Slide Deck →
+            </a>
+          </div>
+        </div>
+
+        <!-- CARD 2: AVDB AVIATION -->
+        <div class="glass-card p-6 sm:p-7 flex flex-col justify-between group">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="badge-status">
+                <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+                <span>Live System</span>
+              </span>
+              <span class="text-xs font-mono text-slate-400">Google Cloud Run</span>
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-orange-400 transition-colors">
+              AvDB Platform
+            </h3>
+            <p class="text-xs font-mono text-sky-400 mb-3">
+              Aviation Analytics & Great-Circle Atlas
+            </p>
+            <p class="text-sm text-slate-300 leading-relaxed mb-6">
+              54.3M BTS and DB1B records staged and marted in Google BigQuery. Features 1990s in-flight geodesic cartography, multi-airport catchments, unserved market proposals, and native SwiftUI iOS app companion.
+            </p>
+          </div>
+          <div class="space-y-3 pt-4 border-t border-white/10">
+            <div class="flex flex-wrap gap-1.5 mb-2">
+              <span class="badge-tech">BigQuery</span>
+              <span class="badge-tech">PyDeck</span>
+              <span class="badge-tech">SwiftUI</span>
+              <span class="badge-tech">OAuth 2.0</span>
+            </div>
+            <div class="flex gap-2">
+              <a href="/avdb" class="btn-secondary flex-1 py-2.5 text-xs text-center">
+                Explainer
+              </a>
+              <a href="https://avdb.riffe.co.uk" target="_blank" rel="noopener noreferrer" class="btn-orange flex-1 py-2.5 text-xs text-center">
+                Live Site ↗
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 3: CAREER COMMAND & AGENTIC MIGRATION -->
+        <div class="glass-card p-6 sm:p-7 flex flex-col justify-between group">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="badge-orange">70%+ Labor Saved</span>
+              <span class="text-xs font-mono text-slate-400">VS Code AI Agent</span>
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-orange-400 transition-colors">
+              Career Radar
+            </h3>
+            <p class="text-xs font-mono text-sky-400 mb-3">
+              Autonomous Agent & 90-Workbook Migration
+            </p>
+            <p class="text-sm text-slate-300 leading-relaxed mb-6">
+              Direct ATS radar polling Greenhouse & Ashby with 2ms heuristic matching. Features the flagship enterprise case study: automated migration of 90 production workbooks from Tableau to Sigma using AI agents.
+            </p>
+          </div>
+          <div class="space-y-3 pt-4 border-t border-white/10">
+            <div class="flex flex-wrap gap-1.5 mb-2">
+              <span class="badge-tech">Tableau → Sigma</span>
+              <span class="badge-tech">BigQuery</span>
+              <span class="badge-tech">REST Radar</span>
+            </div>
+            <div class="flex gap-2">
+              <a href="/career" class="btn-secondary flex-1 py-2.5 text-xs text-center">
+                Explainer
+              </a>
+              <a href="https://career.riffe.co.uk" target="_blank" rel="noopener noreferrer" class="btn-orange flex-1 py-2.5 text-xs text-center">
+                Live Site ↗
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 4: APPLE MUSIC ROAST -->
+        <div class="glass-card p-6 sm:p-7 flex flex-col justify-between group">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="badge-orange">Apple MusicKit</span>
+              <span class="text-xs font-mono text-slate-400">music.riffe.co.uk</span>
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-orange-400 transition-colors">
+              Apple Music Roast
+            </h3>
+            <p class="text-xs font-mono text-sky-400 mb-3">
+              Deterministic Telemetry & 7 Roast Archetypes
+            </p>
+            <p class="text-sm text-slate-300 leading-relaxed mb-6">
+              Ingests raw Apple MusicKit listening history, computes Herfindahl-Hirschman Index (HHI) for artist diversity, and triggers 7 data-driven roast archetypes with custom severity ratings (1 to 5 🔥).
+            </p>
+          </div>
+          <div class="space-y-3 pt-4 border-t border-white/10">
+            <div class="flex flex-wrap gap-1.5 mb-2">
+              <span class="badge-tech">Next.js 14</span>
+              <span class="badge-tech">MusicKit API</span>
+              <span class="badge-tech">TypeScript</span>
+            </div>
+            <div class="flex gap-2">
+              <a href="/music-roast" class="btn-secondary flex-1 py-2.5 text-xs text-center">
+                Explainer
+              </a>
+              <a href="https://music.riffe.co.uk" target="_blank" rel="noopener noreferrer" class="btn-orange flex-1 py-2.5 text-xs text-center">
+                Live Site ↗
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 5: TABLEAU PUBLIC SHOWCASE -->
+        <div class="glass-card p-6 sm:p-7 flex flex-col justify-between group">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="badge-tech">Certified Professional</span>
+              <span class="text-xs font-mono text-slate-400">Interactive Embeds</span>
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-orange-400 transition-colors">
+              Tableau Public
+            </h3>
+            <p class="text-xs font-mono text-sky-400 mb-3">
+              Spatial, Longitudinal & Financial Portfolios
+            </p>
+            <p class="text-sm text-slate-300 leading-relaxed mb-6">
+              Interactive embedded suite featuring 4 selected visualizations: Marriage Equality Timeline, California Wildfire Path Prediction POC, Territorial Sales Drilldowns, and Profitability by Agreement.
+            </p>
+          </div>
+          <div class="space-y-3 pt-4 border-t border-white/10">
+            <div class="flex flex-wrap gap-1.5 mb-2">
+              <span class="badge-tech">Embedding v3</span>
+              <span class="badge-tech">Spatial POC</span>
+              <span class="badge-tech">P&L Models</span>
+            </div>
+            <a href="/tableau" class="btn-secondary w-full py-2.5 text-xs text-center">
+              Open Interactive Embeds →
+            </a>
+          </div>
+        </div>
+
+        <!-- CARD 6: EXECUTIVE RESUME HIGHLIGHTS -->
+        <div class="glass-card p-6 sm:p-7 flex flex-col justify-between group">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="badge-status">Print / PDF Ready</span>
+              <span class="text-xs font-mono text-slate-400">Web-Optimized</span>
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-orange-400 transition-colors">
+              Executive Resume
+            </h3>
+            <p class="text-xs font-mono text-sky-400 mb-3">
+              10+ Years Analytics Delivery Leadership
+            </p>
+            <p class="text-sm text-slate-300 leading-relaxed mb-6">
+              Curated leadership achievements across Pacific Life, Slalom Consulting, and AECOM. Filterable competencies matrix (Snowflake, Sigma, BigQuery, dbt), Center of Enablement scaling, and certifications.
+            </p>
+          </div>
+          <div class="space-y-3 pt-4 border-t border-white/10">
+            <div class="flex flex-wrap gap-1.5 mb-2">
+              <span class="badge-tech">SnowPro Core</span>
+              <span class="badge-tech">Tableau Pro</span>
+              <span class="badge-tech">Alteryx Core</span>
+            </div>
+            <a href="/resume" class="btn-orange w-full py-2.5 text-xs text-center">
+              View Executive Resume →
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= OPERATING PRINCIPLES STRIP ================= -->
+  <section class="py-16 bg-slate-900/40 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <div>
+          <div class="text-xs font-mono text-orange-400 font-bold uppercase mb-2">Structural Rule</div>
+          <h3 class="text-lg font-bold text-white mb-2">Furniture vs. Foundation</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Changing a dashboard filter is moving a chair. Altering a financial metric or grain is moving a load-bearing wall. We protect semantic integrity so systems don't collapse.
+          </p>
+        </div>
+
+        <div>
+          <div class="text-xs font-mono text-sky-400 font-bold uppercase mb-2">Operational Protocol</div>
+          <h3 class="text-lg font-bold text-white mb-2">The Flight Deck Mindset</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Student pilot checklist discipline meets enterprise analytics. We provide decision-makers with clear, real-time instruments while managing systemic risk under pressure.
+          </p>
+        </div>
+
+        <div>
+          <div class="text-xs font-mono text-emerald-400 font-bold uppercase mb-2">Economic Sustainability</div>
+          <h3 class="text-lg font-bold text-white mb-2">The Green Data Stack</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Prioritizing post-launch adoption, low-friction maintenance, and cloud serverless efficiency ($0.00 base cost) over wasteful recurring compute and bloated prototype sprawl.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT & CONNECT BANNER ================= -->
+  <section class="py-20 border-t border-white/10">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="p-8 sm:p-12 rounded-3xl bg-gradient-to-r from-slate-900 via-blue-950/40 to-slate-900 border border-white/10 shadow-2xl flex flex-col sm:flex-row items-center justify-between gap-8">
+        <div>
+          <div class="badge-orange mb-3">Direct Collaboration</div>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+            Ready to build load-bearing systems?
+          </h2>
+          <p class="text-sm text-slate-300 mt-2 max-w-xl leading-relaxed">
+            Available for select advisory roles, analytics engineering transformation, and fractional leadership.
+          </p>
+        </div>
+        <div class="flex flex-col sm:flex-row items-center gap-3 shrink-0">
+          <a href="mailto:steve@riffe.co.uk" class="btn-orange px-6 py-3 text-sm">
+            steve@riffe.co.uk →
+          </a>
+          <a href="https://linkedin.com/in/steveriffe" target="_blank" rel="noopener noreferrer" class="btn-secondary px-5 py-3 text-sm">
+            LinkedIn
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="border-t border-white/10 py-12 glass-surface">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+      <div class="flex items-center gap-3">
+        <div class="w-8 h-8 rounded-lg bg-blue-600 flex items-center justify-center font-mono font-bold text-white text-xs">SR</div>
+        <div class="text-xs text-slate-400">
+          © 2026 Steve Riffe · <a href="https://portfolio.riffe.co.uk" class="hover:text-white">portfolio.riffe.co.uk</a> · Cloud Run Serverless Architecture
+        </div>
+      </div>
+      <div class="flex items-center gap-6 text-xs text-slate-400 font-mono">
+        <a href="https://github.com/steveriffe" target="_blank" class="hover:text-white">GitHub</a>
+        <a href="https://linkedin.com/in/steveriffe" target="_blank" class="hover:text-white">LinkedIn</a>
+        <a href="mailto:steve@riffe.co.uk" class="hover:text-white">steve@riffe.co.uk</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Menu Toggle Script -->
+  <script>
+    const mobileBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    mobileBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

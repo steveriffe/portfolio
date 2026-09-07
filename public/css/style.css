@@ -1,0 +1,199 @@
+/* Steve Riffe Enterprise Consulting Design System: Unified Portfolio Styles */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap');
+
+:root {
+  --canvas-bg: #0B192C;
+  --canvas-deep: #060911;
+  --surface: #111D33;
+  --surface-hover: #16243D;
+  --surface-elevated: rgba(17, 29, 51, 0.85);
+  
+  --brand-blue: #2563EB;
+  --brand-blue-dark: #1D4ED8;
+  --electric-sky: #38BDF8;
+  --vibrant-orange: #FF6B00;
+  --vibrant-orange-hover: #EA580C;
+  --vibrant-orange-glow: rgba(255, 107, 0, 0.25);
+  --amber-glow: #F97316;
+  --emerald-active: #10B981;
+  
+  --text-primary: #FFFFFF;
+  --text-secondary: #CBD5E1;
+  --text-muted: #94A3B8;
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-highlight: rgba(56, 189, 248, 0.2);
+  --border-orange: rgba(255, 107, 0, 0.35);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--canvas-bg);
+  background-image: 
+    radial-gradient(circle at 15% 15%, rgba(37, 99, 235, 0.08) 0%, transparent 45%),
+    radial-gradient(circle at 85% 85%, rgba(255, 107, 0, 0.06) 0%, transparent 40%),
+    radial-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 100% 100%, 100% 100%, 28px 28px;
+  color: var(--text-secondary);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--canvas-deep);
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* Glassmorphic Surfaces */
+.glass-surface {
+  background: var(--surface-elevated);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid var(--border-subtle);
+}
+
+.glass-card {
+  background: var(--surface-elevated);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card:hover {
+  border-color: var(--border-highlight);
+  transform: translateY(-2px);
+  box-shadow: 0 16px 32px -8px rgba(0, 0, 0, 0.5), 0 0 20px -4px rgba(56, 189, 248, 0.15);
+}
+
+.glass-card.accent-orange:hover {
+  border-color: var(--border-orange);
+  box-shadow: 0 16px 32px -8px rgba(0, 0, 0, 0.5), 0 0 24px -4px var(--vibrant-orange-glow);
+}
+
+/* Executive Accent Button */
+.btn-orange {
+  background: var(--vibrant-orange);
+  color: #FFFFFF;
+  font-weight: 700;
+  border-radius: 12px;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 14px rgba(255, 107, 0, 0.35);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.btn-orange:hover {
+  background: var(--vibrant-orange-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(255, 107, 0, 0.45);
+}
+
+.btn-secondary {
+  background: rgba(17, 29, 51, 0.9);
+  color: var(--text-primary);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  font-weight: 600;
+  border-radius: 12px;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.btn-secondary:hover {
+  background: #1a2a46;
+  border-color: var(--electric-sky);
+  color: #FFFFFF;
+}
+
+/* Badge System */
+.badge-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: 9999px;
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--emerald-active);
+}
+
+.badge-tech {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.2rem 0.6rem;
+  border-radius: 6px;
+  background: rgba(56, 189, 248, 0.1);
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--electric-sky);
+}
+
+.badge-orange {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.2rem 0.6rem;
+  border-radius: 6px;
+  background: rgba(255, 107, 0, 0.12);
+  border: 1px solid rgba(255, 107, 0, 0.3);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #FB923C;
+}
+
+/* Print Specification */
+@media print {
+  body {
+    background: #FFFFFF !important;
+    color: #111827 !important;
+    font-size: 10pt;
+  }
+  .no-print, header, footer, .btn-orange, .btn-secondary {
+    display: none !important;
+  }
+  .glass-card {
+    background: #FFFFFF !important;
+    border: 1px solid #E5E7EB !important;
+    box-shadow: none !important;
+    color: #111827 !important;
+  }
+  h1, h2, h3, h4 {
+    color: #111827 !important;
+  }
+}

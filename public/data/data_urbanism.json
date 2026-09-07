@@ -1,0 +1,158 @@
+[
+  {
+    "slideNumber": 1,
+    "texts": [
+      "Data Urbanism",
+      "scaling digital infrastructure with the mindset of a city builder",
+      "Gardens by the Bay, Singapore"
+    ],
+    "image": "image3.jpg",
+    "speakerNote": "I\u2019ve spent the better part of two decades standing at the intersection of the physical built environment and digital systems. For over 15 years, my office wasn't a screen\u2014it was steel, concrete, and high-stakes infrastructure. I coordinated teams delivering projects like the Waterloo International terminal in London and Zaha Hadid's Al Janoub Stadium in Qatar.\n\nWhen I transitioned into analytics and data visualization engineering, I was struck by an immediate, systemic realization: we are building enterprise data ecosystems with the exact same architectural challenges as building a city\u2014yet we treat them like disposable pop-up tents.\n\nLook at Singapore's skyline. Most people judge it by its iconic silhouettes\u2014like the Supertrees here at Gardens by the Bay. But a city is not its skyline; a city is a living, breathing metabolic organism. A magnificent tower is uninhabitable if the elevators stall, the water pressure drops, or the structural footings shift. In enterprise analytics, we suffer from what I call the 'Skyline Problem.' We declare victory the moment we ship a flashy, colorful executive dashboard to the C-suite. But that dashboard is merely the facade. If the underlying data warehouse, semantic layer, and pipeline supply chain fail, the entire system collapses into digital decay.\n\nData Urbanism is the discipline of treating data not as cosmetic furniture, but as load-bearing civic infrastructure. Using the Royal Institute of British Architects (RIBA) Plan of Work as our blueprint, I\u2019m going to show you how we build data environments that truly hold weight, breathe, and endure."
+  },
+  {
+    "slideNumber": 2,
+    "texts": [
+      "The Human City",
+      "built for the inhabitant",
+      "Woodland Trust HQ, Grantham, UK"
+    ],
+    "image": "image14.png",
+    "speakerNote": "This is the Woodland Trust Headquarters in Grantham. It's constructed with massive timber frames, passive natural ventilation, and daylighting that moves with the sun. The building feels light, hospitable, and intuitive. Crucially, it responds to the humans living inside it, rather than forcing people to contort their daily lives to accommodate the building.\n\nIn classical architecture, we ensure this human focus through the RIBA Plan of Work\u2014an 8-stage lifecycle that takes a project from a blank canvas to a living, occupied asset. The foundational rule of that framework is simple: you don't start by pouring concrete; you start by understanding how a human being actually navigates space.\n\nNow think about how 90% of enterprise analytics projects kick off. A team opens a ticket and asks: 'What data do we have available in the database?' That is the equivalent of designing a home by staring at a random pile of leftover bricks. Instead, our first inquiry must always be: 'What decision does this person need to make with total confidence at 9:00 AM on Monday?'\n\nWhen an executive or actuarial underwriter has to embark on an archaeological scavenger hunt just to reconcile a single metric, that isn't user error\u2014it is an architectural design failure. In Data Urbanism, we design for the human scale first."
+  },
+  {
+    "slideNumber": 3,
+    "texts": [
+      "From Blueprints to Outcomes",
+      "LINEAR DELIVERY",
+      "OUTCOME-CENTRIC"
+    ],
+    "image": "image4.jpg",
+    "speakerNote": "For generations, construction was trapped in a rigid, linear 'Waterfall' dogma: specify the blueprint, pour the concrete, hand over the physical keys, and walk away. If it was on budget, on schedule, and didn't collapse, everyone collected their bonuses.\n\nIn 2013, the architectural profession experienced a quiet revolution. The RIBA Plan of Work was fundamentally overhauled. The industry realized that practical completion is not the finish line\u2014it is the opening bell. They stopped asking 'Is the construction done?' and started measuring post-occupancy performance: Does the building breathe efficiently? Do natural sightlines reduce stress? Are hospital wards actually accelerating patient recovery?\n\nIn the data world, we are still largely trapped in that antiquated pre-2013 linear mindset. We build a dashboard, publish it to a server, mark the Jira ticket 'Closed,' and declare success.\n\nBut if you engineer a technically flawless dashboard and nobody consults it when millions of dollars are on the line, you haven't built an asset; you\u2019ve built digital landfill. Our North Star cannot be output; it must be operational outcome. Data infrastructure must be managed as a Living Asset\u2014continuously instrumented with telemetry to verify that it is driving sustained adoption, clarity, and quantifiable ROI."
+  },
+  {
+    "slideNumber": 4,
+    "texts": [
+      "Fixed Units of Truth",
+      "set the foundation before a single line is drawn",
+      "Lego House, Surrey, UK",
+      "Stage 0: Strategic Definition"
+    ],
+    "image": "image1.jpg",
+    "speakerNote": "Our journey across the RIBA circle begins at Stage 0: Strategic Definition. This is the phase organizations are most desperate to rush through, yet it is where the most dangerous contradictions must be reconciled before drawing a single line.\n\nConsider the James May Lego House in Surrey. The brief was a glorious paradox: build a real, habitable two-story home using 3.3 million plastic Lego bricks. To pull that off, our engineering team had to balance three competing truths.\n\nFirst: The Vision. The producers demanded it look, feel, and assemble authentically like genuine Lego.\n\nSecond: The Physics. While individual ABS plastic bricks possess astonishing compressive strength, their tolerances under multi-ton live loads are microscopic. I spent an unforgettable day helping our structural engineers stress-test experimental Lego beam assemblies until they shattered under catastrophic loads to determine their exact failure limits.\n\nThird: The Reality. To satisfy UK building control, fire safety, and habitability insurance, we had to conceal a load-bearing timber framework within the Lego skin.\n\nIn enterprise data, Stage 0 is where we reconcile that exact tension. Stakeholders arrive with a 'Lego Vision'\u2014they want an effortless, beautiful, self-serve insight playground. Our job is to engineer the hidden governance, data contracts, and semantic scaffolding that guarantees the vision won't buckle under audit, regulatory pressure, or sudden scaling."
+  },
+  {
+    "slideNumber": 5,
+    "texts": [
+      "Heritage Audit",
+      "survey legacy data to unlock future potential",
+      "Waterloo International, London",
+      "Stage 1: Feasibility & Site Survey"
+    ],
+    "image": "image6.png",
+    "speakerNote": "In Stage 1, we conduct the Site Survey. I view this through the lens of Waterloo International in London. When Eurostar relocated high-speed cross-channel services to St Pancras, they left behind Nicholas Grimshaw's five soaring 'ghost platforms' sitting directly in the throat of Britain's busiest commuter rail hub.\n\nThe challenge was performing open-heart surgery on a living transit terminal: weaving modern 21st-century commuter trains back into a complex Victorian rail network without interrupting a single peak-hour commuter. On a project like that, you don't merely trust legacy drawings\u2014because the historical drawings are almost universally incomplete or wrong. You must physically inspect under the floorboards.\n\nAs analytics delivery leaders, we are almost never working on a pristine greenfield site. We are executing the 'Waterloo Dilemma' daily. We must conduct a rigorous Heritage Audit: identifying the dormant, load-bearing institutional logic that actually keeps the business running, while locating the 'structural asbestos'\u2014the toxic shadow spreadsheets, unversioned ETL scripts, and undocumented logic traps waiting to contaminate your new cloud warehouse."
+  },
+  {
+    "slideNumber": 6,
+    "texts": [
+      "Mathematical Logic",
+      "turn impossible curves into buildable code",
+      "Al Janoub Stadium, Qatar",
+      "Stage 2: Concept Design"
+    ],
+    "image": "image11.png",
+    "speakerNote": "Once the site survey is codified, we advance to Stage 2: Concept Design. Dame Zaha Hadid was world-renowned for swooping, fluid curves that skeptics routinely dismissed as unbuildable. When you stand before Al Janoub Stadium, the structure looks as though it was poured effortlessly from the sky, paying homage to traditional Qatari dhow fishing boats.\n\nYet beneath that poetic sculpture lies extraordinary computational and mathematical discipline. Parametric equations turned those radical organic surfaces into precisely engineered, CNC-fabricated steel trusses. Stage 2 is the sacred moment where creative vision submits to the discipline of the grid.\n\nOur corporate stakeholders regularly arrive with their own 'Curved Dreams': they want 'Total Data Democracy,' 'Real-Time Predictive AI,' or 'One Metric to Rule Them All.' These aspirations are compelling, but in their raw form, they are structurally unviable. Our mission in Concept Design is never to dismiss the vision with a cynical 'no.' It is to discover the underlying mathematical logic and dimensional modeling that makes the vision buildable. We translate high-level business poetry into deterministic schema geometry."
+  },
+  {
+    "slideNumber": 7,
+    "texts": [
+      "Digital Twins",
+      "buildings as data, data as a living model",
+      "Qasr al Hosn, Abu Dhabi",
+      "Stage 3: Spatial Coordination"
+    ],
+    "image": "image5.jpg",
+    "speakerNote": "Stage 3 is Spatial Coordination. When our team was tasked with preserving and restoring Qasr al Hosn\u2014the historic 18th-century stone fort in Abu Dhabi\u2014we didn't start with hand-sketched drafting. We brought in terrestrial LIDAR scanners, bathing that ancient coral stone in millions of laser coordinates to generate an ultra-dense Point Cloud\u2014a millimeter-accurate digital ghost of reality.\n\nThat scan seeded our Building Information Model (BIM). In BIM, a building is no longer a static 2D blueprint; it is a relational 3D database. Every stone, steel lintel, and bolt carries rich metadata: its quarry origin, structural load rating, installation date, and maintenance ledger. For decades, business intelligence has handed users flat 2D charts\u2014static snapshots of the past. In Data Urbanism, we build a living Digital Twin of the enterprise. Every metric carries complete dbt lineage: where the raw row was quarried, who transformed it, what tests verified it, and the exact compute cost to query it in Snowflake or BigQuery.\n\nEven more vital is Clash Detection. In BIM, automated algorithms detect if an HVAC duct collides with a structural steel beam before fabrication. In modern data systems, we perform Semantic Clash Detection: identifying where Marketing's definition of 'Customer Acquisition' collides head-on with Finance's definition of 'Recognized Revenue'\u2014resolving the conflict in code before it triggers an executive catastrophe."
+  },
+  {
+    "slideNumber": 8,
+    "texts": [
+      "Precise Blueprints",
+      "coordinating high-stakes flow and digital movement",
+      "Schiphol Pier A, Netherlands",
+      "Stage 4: Technical Design"
+    ],
+    "image": "image12.jpg",
+    "speakerNote": "With spatial coordination locked, we enter Stage 4: Technical Design. Adding Pier A to Amsterdam's Schiphol Airport was the equivalent of bolting a new high-compression turbocharger onto an airliner's jet engine while in mid-flight. Schiphol is a relentless, 24/7 aviation hub. You do not get to 'beta test' an active international boarding gate.\n\nEvery passenger security corridor, baggage handling conveyor, HVAC plenum, and fire-suppression interface had to be specified down to the millimeter. If a technical drawing is only 99% accurate, the remaining 1% can trigger an operational bottleneck that strands 50,000 international travelers. Precision is not an artistic aspiration; it is an uncompromising safety mandate.\n\nIn analytics engineering, Stage 4 is where conceptual architecture hardens into production-grade code. This is where we specify deterministic SQL logic, row-level security policies, idempotent ingestion pipelines, and REST API handshakes. If a database join is 99% correct, you haven't lost 1% of the records\u2014you have poisoned organizational trust. Just as Pier A had to integrate seamlessly with Schiphol's baggage network, our data products must interface cleanly with existing systems without taking production down."
+  },
+  {
+    "slideNumber": 9,
+    "texts": [
+      "Supply Chain of Truth",
+      "DfMA: prefabricated units built from pure data",
+      "Shell Modular DfMA Stations, Europe",
+      "Stage 5: Manufacturing and Construction"
+    ],
+    "image": "image7.jpg",
+    "speakerNote": "Stage 5 is where construction actually occurs\u2014yet modern construction rarely looks like a muddy job site anymore. Shell faced a massive logistical crisis across Europe: an aging network of thousands of legacy roadside service stations that required urgent modernization. Had we approached every individual station as a bespoke on-site construction project, the rollout would have dragged on for decades and hemorrhaged capital.\n\nSo we shifted our entire mental model from 'Bespoke Construction' to Industrial Manufacturing. We implemented DfMA: Design for Manufacture and Assembly. Instead of pouring custom concrete or welding steel on-site in unpredictable weather, we engineered standardized, prefabricated modular cassettes in a controlled factory setting. When delivered to the site, the project wasn't a build; it was an assembly. What once took six months on-site was completed in under two weeks.\n\nThis is precisely how I lead modern analytics engineering. We must dismantle the craft-guild mindset of hand-writing custom, one-off SQL reports for every incoming ticket. We manage a Data Supply Chain. Using Snowflake, BigQuery, and dbt, we fabricate reusable, modular components\u2014standardized staging models, semantic customer metrics, and governed dimensions. When a new business capability is needed, we assemble pre-tested, certified blocks of code at the speed of the market."
+  },
+  {
+    "slideNumber": 10,
+    "texts": [
+      "Operational Readiness",
+      "hand over a living asset, not just a building",
+      "Istanbul New ATC",
+      "Stage 6: Handover"
+    ],
+    "image": "image8.jpg",
+    "speakerNote": "Once assembly concludes, we arrive at Stage 6: Handover. When designing the landmark Air Traffic Control tower for Istanbul's mega-hub\u2014collaborating with Pininfarina, the legendary design house behind Ferrari\u2014the result was an aerodynamic, sculpted marvel.\n\nYet on day one of operation, sculptural beauty vanishes into the background. Stage 6 belongs entirely to Operational Readiness. An ATC tower is the central nervous system of an airport. It succeeds only when the controllers possess ergonomic, unobstructed visibility and intuitive instruments to safely guide hundreds of aircraft through complex airspace every hour.\n\nIn analytics delivery, this is the pivotal moment where consultants must transition from builders into flight instructors. Too many consultancies deliver a sophisticated data platform, email a login link, and disappear. That is not handover; that is abandonment.\n\nTrue handover means equipping internal teams to fly the system independently. We deliver real-time operational telemetry, comprehensive runbooks, automated regression testing, and tailored training cohorts. Our goal is to leave internal leaders standing firmly in their own control tower, surveying their enterprise with complete situational awareness."
+  },
+  {
+    "slideNumber": 11,
+    "texts": [
+      "Living Ecosystem",
+      "performance, resilience and the human outcome",
+      "Laguna Honda Hospital, San Francisco",
+      "Stage 7: In Use"
+    ],
+    "image": "image13.jpg",
+    "speakerNote": "I want to close our journey through the RIBA lifecycle right where my career began: at Laguna Honda Hospital in San Francisco. Laguna Honda is a civic sanctuary that has cared for the city's most vulnerable residents since the 1860s Gold Rush. When I first stepped onto that campus, patients were still housed in historic 'Nightingale Wards'\u2014cavernous, open-air halls designed in the 19th century to stave off infection through natural breezes.\n\nModernizing Laguna Honda required navigating rigorous seismic mandates following the Northridge earthquake, but our true goal was holistic, human sustainability. It ultimately became the first LEED-certified green hospital in California. The indelible lesson I carried away from Laguna Honda is that a civic asset is never truly 'finished.' In Stage 7\u2014In Use\u2014the contractors have packed up, and the project enters Post-Occupancy Evaluation. We ask the hard questions: Is the space fulfilling its clinical purpose? Does it support human dignity? How does it adapt as healthcare evolves?\n\nIn enterprise data, Stage 7 represents the first year after deployment. Success is never the launch party\u2014it is sustained, voluntary user adoption. Are queries staying sub-second? Is the data maintaining pristine hygiene? This is what I term the 'Green Data Stack': designing lean, sustainable pipelines that minimize cloud warehouse spend, eliminate wasteful recurring queries, and empower business users without requiring an army of ongoing contractors. We build for generational longevity."
+  },
+  {
+    "slideNumber": 12,
+    "texts": [
+      "Thank you"
+    ],
+    "image": null,
+    "speakerNote": "Walking through the 8 stages of the RIBA Plan of Work reveals a fundamental truth: great architecture is not an accident of genius; it is the inevitable outcome of disciplined process.\n\nWhen we respect the progression from Strategic Definition to Post-Occupancy Evaluation, we replace chaotic fire drills with predictable, repeatable engineering excellence.\n\nYet beyond the sequence of stages, three radical structural principles govern whether an analytics system stands the test of time or collapses under its own weight: Furniture vs. Foundation, The Wayfinding Gap, and Adaptive Reuse. Let us examine each one."
+  },
+  {
+    "slideNumber": 13,
+    "texts": [
+      "Furniture v Foundation",
+      "data as load bearing",
+      "Private Residence, Guildford, England"
+    ],
+    "image": "image16.png",
+    "speakerNote": "Early in my architectural career at a boutique practice in London, we were deep in the Technical Design phase of a high-end private residence in Guildford. Structural footings were poured; the steel frame was fabricated.\n\nThen the client visited the site and announced a 'simple tweak': they wanted to slide the kitchen island four meters across the room, alter the plumbing drops, and change out several stone fixtures. In their mind, they were simply rearranging the furniture. In physical reality, moving that island severed main drain stacks, required re-engineering the structural slab, triggered new municipal approvals, and hit directly in the middle of European factory holidays when suppliers were shut down. A 'two-minute idea' derailed the schedule by four months.\n\nEvery single week in enterprise analytics, we witness this exact phenomenon. A business stakeholder casually asks: 'Can we just add this one filter?' or 'Can you just splice in this secondary data source?'\n\nThey believe they are politely asking you to scoot a coffee table. They do not realize they are asking you to sledgehammer a load-bearing semantic wall without reinforcing the roof. This tragedy happens because corporate analytics has lacked a shared vocabulary of architectural maturity. We haven't had an explicit map that signals when a metric is fluid and when the concrete is set. In Data Urbanism, we establish clear structural boundaries: cosmetic presentation layers can be rearranged freely, but our semantic foundations remain mathematically protected."
+  },
+  {
+    "slideNumber": 14,
+    "texts": [
+      "The Wayfinding Gap",
+      "role of the RIBA Client Advisor",
+      "Frenson Estate, Liverpool, England"
+    ],
+    "image": "image17.jpg",
+    "speakerNote": "Between the sparkling strategic vision in the boardroom and the gritty reality of engineering delivery lies an unforgiving chasm: the Wayfinding Gap. This is the masterplan for the Frenson Estate in Liverpool. It is not an engineering specification of pipe gauges; it is an architectural drawing of human relationships. It diagrams how residential fabric, public green spaces, transit arteries, and commercial hubs interlock.\n\nIn the RIBA methodology, this is where the Client Advisor operates. I think of them as master wayfinders. When technical complexity mounts, when unexpected legacy constraints emerge, and when project teams are buried in the weeds of implementation, the Client Advisor keeps the map open on the table. They remind every stakeholder where we stand, why we made past tradeoffs, and how each tactical decision ties back to the original civic mission.\n\nIn enterprise data initiatives, this is precisely the leadership role I inhabit: bridging the translation gap between the Chief Actuary or VP of Sales and the cloud data engineers. We prevent scope drift, translate business nuance into technical precision, and ensure the final product delivers the strategic outcome envisioned on day one."
+  },
+  {
+    "slideNumber": 15,
+    "texts": [
+      "U2 360 Tour \u201cClaw\u201d Stages",
+      "Adaptive Reuse",
+      "the permanence of temporary"
+    ],
+    "image": "image15.jpg",
+    "speakerNote": "We opened this journey looking at the Supertrees of Singapore\u2014machines of concrete and steel disguised as living botanical organisms. We close with this towering icon: 'The Claw,' the gargantuan 165-foot steel structure engineered for U2's 360\u00b0 world tour.\n\nTo millions of concertgoers, it appeared to be a transient entertainment stunt\u2014designed to be bolted together, dismantled, packed into shipping containers, and discarded when the world tour ended. Yet because Mark Fisher and the structural engineers designed it with profound mathematical rigor and modular structural integrity, The Claw refused to die as scrap metal.\n\nInstead, it underwent Adaptive Reuse: transformed into a permanent, iconic civic pavilion and community event structure at the Loveland Living Planet Aquarium in Utah, where it now hosts educational exhibitions and public gatherings. That is the ultimate ambition of Data Urbanism.\n\nVisualization tools come and go. Today an organization uses Tableau; tomorrow Sigma; the day after that, custom agentic UI. Front-end tools are temporary stages. If you build your data pipelines with rigorous semantic architecture, decoupled modular logic, and load-bearing integrity, your foundational data assets will outlive any transient software vendor. You aren't just shipping a temporary dashboard for this quarter's executive review\u2014you are coding the load-bearing skeleton of the enterprise."
+  }
+]
