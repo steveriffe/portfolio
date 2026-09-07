@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tableau Public Showcase | Steve Riffe Certified Professional</title>
-  <meta name="description" content="Selected interactive Tableau Public visualizations by Steve Riffe, Tableau Certified Professional: Marriage Equality, Wildfire Path Prediction POC, Sales Map Drilldown, and Profitability by Agreement.">
+  <title>Tableau Public Showcase | Steve Riffe Visual Analytics</title>
+  <meta name="description" content="Selected interactive Tableau Public visualizations by Steve Riffe: Marriage Equality Timeline, Slalom Hackathon Wildfire Path Prediction, Sales Map Drilldown, and Profitability by Agreement.">
   <link rel="icon" type="image/png" href="/images/apple-touch-icon.png">
   <link rel="stylesheet" href="/css/style.css">
   <script src="https://cdn.tailwindcss.com"></script>
@@ -22,7 +22,7 @@
         </div>
         <div>
           <div class="font-bold text-white text-lg tracking-tight group-hover:text-orange-400 transition-colors">Steve Riffe</div>
-          <div class="text-xs font-mono text-slate-400">Tableau Certified Professional</div>
+          <div class="text-xs font-mono text-slate-400">Visual Analytics & Spatial Modeling</div>
         </div>
       </a>
 
@@ -63,13 +63,13 @@
         <div>
           <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/30 text-xs font-mono text-sky-400 mb-3">
             <span class="w-2 h-2 rounded-full bg-sky-400 animate-pulse"></span>
-            <span>Tableau Certified Professional · Slalom & Pacific Life Lead</span>
+            <span>Enterprise Visual Analytics & Spatial Modeling</span>
           </div>
           <h1 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
             Selected Tableau Visualizations <span class="text-orange-500">.</span>
           </h1>
           <p class="text-lg text-slate-300 max-w-3xl mt-2">
-            A curated collection of public dashboards demonstrating spatial modeling, longitudinal social timelines, predictive concept vectors, and enterprise P&L profitability.
+            Curated interactive dashboards exploring civil rights policy, hackathon satellite geospatial prediction, multi-tier sales hierarchy, and enterprise contract margin economics.
           </p>
         </div>
         <div class="flex items-center gap-3">
@@ -85,49 +85,49 @@
     <div class="glass-card p-2 mb-6 flex flex-wrap gap-2" id="vizTabs">
       <button onclick="switchViz('marriage')" class="viz-tab flex-1 min-w-[200px] text-left p-3.5 rounded-xl border transition-all bg-orange-500/10 border-orange-500/40 text-white" id="tab-marriage">
         <div class="flex items-center justify-between">
-          <span class="text-xs font-mono font-bold text-orange-400">01 · SOCIAL & POLICY</span>
-          <span class="text-[10px] font-mono text-slate-400">Timeline</span>
+          <span class="text-xs font-mono font-bold text-orange-400">01 · PERSONAL & POLICY</span>
+          <span class="text-[10px] font-mono text-slate-400">Global Timeline</span>
         </div>
         <div class="text-sm font-bold text-white mt-1">Marriage Equality Timeline</div>
       </button>
 
       <button onclick="switchViz('wildfire')" class="viz-tab flex-1 min-w-[200px] text-left p-3.5 rounded-xl border transition-all bg-slate-900 border-white/10 text-slate-300 hover:text-white" id="tab-wildfire">
         <div class="flex items-center justify-between">
-          <span class="text-xs font-mono font-bold text-sky-400">02 · SPATIAL PREDICTION</span>
-          <span class="badge-tech text-[10px]">POC</span>
+          <span class="text-xs font-mono font-bold text-sky-400">02 · SLALOM HACKATHON</span>
+          <span class="badge-tech text-[10px]">2nd Place Firm-Wide</span>
         </div>
         <div class="text-sm font-bold text-white mt-1">Wildfire Path Prediction</div>
       </button>
 
       <button onclick="switchViz('sales')" class="viz-tab flex-1 min-w-[200px] text-left p-3.5 rounded-xl border transition-all bg-slate-900 border-white/10 text-slate-300 hover:text-white" id="tab-sales">
         <div class="flex items-center justify-between">
-          <span class="text-xs font-mono font-bold text-emerald-400">03 · ENTERPRISE SALES</span>
-          <span class="text-[10px] font-mono text-slate-400">Geographic Drill</span>
+          <span class="text-xs font-mono font-bold text-emerald-400">03 · TERRITORY DENSITY</span>
+          <span class="text-[10px] font-mono text-slate-400">Drilldown Hierarchy</span>
         </div>
         <div class="text-sm font-bold text-white mt-1">Sales Maps Drilldown</div>
       </button>
 
       <button onclick="switchViz('profitability')" class="viz-tab flex-1 min-w-[200px] text-left p-3.5 rounded-xl border transition-all bg-slate-900 border-white/10 text-slate-300 hover:text-white" id="tab-profitability">
         <div class="flex items-center justify-between">
-          <span class="text-xs font-mono font-bold text-amber-400">04 · FINANCIAL P&L</span>
-          <span class="text-[10px] font-mono text-slate-400">Contract Analysis</span>
+          <span class="text-xs font-mono font-bold text-amber-400">04 · CONTRACT ECONOMICS</span>
+          <span class="text-[10px] font-mono text-slate-400">Margin Leakage</span>
         </div>
         <div class="text-sm font-bold text-white mt-1">Profitability by Agreement</div>
       </button>
     </div>
 
-    <!-- Active Viz Detail & Description Card -->
+    <!-- Active Viz Detail & Narrative Card -->
     <div class="glass-card p-6 mb-6">
-      <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
-        <div>
-          <div class="flex items-center gap-2 mb-1">
-            <span id="vizTag" class="badge-orange">Longitudinal Policy Study</span>
+      <div class="flex flex-col md:flex-row md:items-start justify-between gap-6">
+        <div class="space-y-2">
+          <div class="flex items-center gap-2">
+            <span id="vizTag" class="badge-orange">Personal Narrative & Global Policy</span>
             <span id="vizDirectLink" class="text-xs font-mono text-slate-400">public.tableau.com/views/MarriageEquality_16985250633250</span>
           </div>
-          <h2 id="vizTitle" class="text-xl sm:text-2xl font-bold text-white">Marriage Equality Timeline</h2>
-          <p id="vizDesc" class="text-xs sm:text-sm text-slate-300 mt-1 max-w-3xl leading-relaxed">
-            An interactive historical narrative detailing state-by-state legislative and judicial milestones leading up to landmark civil rights rulings in the United States.
-          </p>
+          <h2 id="vizTitle" class="text-xl sm:text-2xl font-bold text-white">Marriage Equality: Love is Love & A Lot More</h2>
+          <div id="vizDesc" class="text-xs sm:text-sm text-slate-300 max-w-3xl leading-relaxed space-y-2">
+            <!-- Narrative loaded by JS -->
+          </div>
         </div>
         <div class="flex items-center gap-3 shrink-0">
           <a id="vizExternalBtn" href="https://public.tableau.com/app/profile/steveriffe/viz/MarriageEquality_16985250633250/MarriageEqualityTimeline?showOnboarding=true" target="_blank" rel="noopener noreferrer" class="btn-orange px-4 py-2 text-xs flex items-center gap-1.5">
@@ -158,7 +158,7 @@
           <span>Tableau Embedding API v3 Active</span>
         </div>
         <div class="text-slate-500">
-          Author: Steve Riffe (Certified Professional)
+          Author: Steve Riffe · Visual Analytics
         </div>
       </div>
 
@@ -187,30 +187,70 @@
   <script>
     const vizConfigs = {
       marriage: {
-        title: "Marriage Equality Timeline",
-        tag: "Longitudinal Policy Study",
-        desc: "An interactive historical narrative detailing state-by-state legislative and judicial milestones leading up to landmark civil rights rulings in the United States. Showcases time-series filtering and custom polygon maps.",
+        title: "Marriage Equality: Love is Love & A Lot More",
+        tag: "Personal Story & Global Civil Rights Policy",
+        desc: `
+          <p class="leading-relaxed">
+            <em>"Marriage is a cherished institution that offers couples critical protections—financial security, hospital visitation and medical decision-making rights, and immigration sponsorship. While these benefits are often taken for granted, they are existential to same-sex couples who were historically denied them."</em>
+          </p>
+          <p class="leading-relaxed mt-2 text-slate-300">
+            <strong>The Personal Story:</strong> This visualization is deeply personal to me. I met my husband in the wonderful city of Montreal in 2005, where we wed the following year. Shortly thereafter, I was able to immigrate to the United Kingdom. As an American citizen, I had fully expected to live in the UK permanently because the United States had a federal statute (the Defense of Marriage Act - DOMA) strictly barring federal recognition of our legal marriage.
+          </p>
+          <p class="leading-relaxed mt-2 text-slate-400 text-xs">
+            This interactive timeline curates the pivotal legislative, judicial, and grassroots milestones—from the Netherlands in 2001 to DOMA's overturn in 2013 and beyond—tracking global population access to marriage equality.
+          </p>
+        `,
         src: "https://public.tableau.com/views/MarriageEquality_16985250633250/MarriageEqualityTimeline",
         externalUrl: "https://public.tableau.com/app/profile/steveriffe/viz/MarriageEquality_16985250633250/MarriageEqualityTimeline?showOnboarding=true"
       },
       wildfire: {
         title: "Wildfire Path Prediction - Proof of Concept",
-        tag: "Spatial Vector Modeling",
-        desc: "Proof of concept model combining topographic elevation layers, historical wind vectors, and fuel moisture indices to project wildfire perimeter spread trajectories in California.",
+        tag: "Slalom Hackathon Finalist (2nd Place Firm-Wide)",
+        desc: `
+          <p class="leading-relaxed">
+            Built as a rapid-innovation <strong>Hackathon project at Slalom</strong> representing the Orange County office—awarded <strong>2nd place firm-wide</strong> across all national offices (finishing just behind a terrific Detroit team monitoring community air quality).
+          </p>
+          <p class="leading-relaxed mt-2 text-slate-300">
+            <strong>Architecture & Impact:</strong> We connected Tableau to an AWS Redshift spatial data pipeline ingesting satellite imagery data feeds. By combining elevation contour topologies, historical fire spread perimeters, wind vector fields, and real-time fuel moisture levels, the model projects probable wildfire perimeter spread trajectories.
+          </p>
+          <p class="leading-relaxed mt-2 text-slate-400 text-xs">
+            The visualization is engineered with flight-deck clarity specifically to give first responders and incident commanders faster, unambiguous spatial directions before dangerous firelines jump containment.
+          </p>
+        `,
         src: "https://public.tableau.com/views/Wildfire_path_concept/WildfirePathPrediction-POC",
         externalUrl: "https://public.tableau.com/views/Wildfire_path_concept/WildfirePathPrediction-POC?:language=en-US&:sid=&:redirect=auth&showOnboarding=true&:display_count=n&:origin=viz_share_link"
       },
       sales: {
         title: "Sales Maps Drilldown",
-        tag: "Enterprise Territorial Analytics",
-        desc: "Hierarchical multi-tier geographic sales analysis: zooming from national territory overview into regional clusters, metropolitan statistical areas (MSAs), and account-level conversion rates.",
+        tag: "Hierarchical Territory Execution & Density",
+        desc: `
+          <p class="leading-relaxed">
+            Geographic business intelligence is too often reduced to superficial, cosmetic heatmaps that look pretty on an executive slide but fall completely flat when regional sales directors need to direct boots on the ground.
+          </p>
+          <p class="leading-relaxed mt-2 text-slate-300">
+            <strong>Interactive Mechanics:</strong> This dashboard demonstrates multi-tier hierarchical drilldown mechanics—zooming smoothly from high-altitude national quota allocations down to regional wholesaler clusters, metropolitan statistical trade areas (MSAs), and account-level conversion density.
+          </p>
+          <p class="leading-relaxed mt-2 text-slate-400 text-xs">
+            It ensures commercial leadership isn't guessing where pipeline volume is hiding, but allocating territory reps and marketing spend with surgical geographic precision.
+          </p>
+        `,
         src: "https://public.tableau.com/views/SalesMapDrilldown/SalesMaps",
         externalUrl: "https://public.tableau.com/views/SalesMapDrilldown/SalesMaps"
       },
       profitability: {
         title: "Profitability by Agreement - Demo",
-        tag: "Financial Contract Performance",
-        desc: "Corporate contract economics dashboard tracking gross margins, variable service delivery costs, volume discounts, and net realized margin across multi-year client agreements.",
+        tag: "Contract Economics & Margin Leakage Diagnostics",
+        desc: `
+          <p class="leading-relaxed">
+            In enterprise commercial relationships, there is almost always a massive chasm between top-line contracted revenue and the actual cash margin retained at the bottom line.
+          </p>
+          <p class="leading-relaxed mt-2 text-slate-300">
+            <strong>Unpacking the Hidden Costs:</strong> This dashboard models contract-level P&L economics—deconstructing gross margins, variable service delivery expenses, volume discount tiers, and SLA penalty clauses across multi-year client agreements.
+          </p>
+          <p class="leading-relaxed mt-2 text-slate-400 text-xs">
+            Engineered to give account executives and finance leaders instantaneous visibility into which relationships are genuinely driving profitability versus which high-volume marquee clients are quietly leaking margin.
+          </p>
+        `,
         src: "https://public.tableau.com/views/ProfitabilitybyAgreement-Demo/ProfitabilitybyAgreement",
         externalUrl: "https://public.tableau.com/views/ProfitabilitybyAgreement-Demo/ProfitabilitybyAgreement"
       }
@@ -232,7 +272,7 @@
       // Update text
       document.getElementById('vizTitle').innerText = config.title;
       document.getElementById('vizTag').innerText = config.tag;
-      document.getElementById('vizDesc').innerText = config.desc;
+      document.getElementById('vizDesc').innerHTML = config.desc;
       document.getElementById('vizDirectLink').innerText = config.src.replace('https://', '');
       document.getElementById('vizExternalBtn').href = config.externalUrl;
 
@@ -247,6 +287,9 @@
         </tableau-viz>
       `;
     }
+
+    // Set initial blurb
+    document.getElementById('vizDesc').innerHTML = vizConfigs['marriage'].desc;
   </script>
 
 </body>
