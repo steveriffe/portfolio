@@ -24,7 +24,7 @@ gcloud run deploy "$SERVICE_NAME" \
   --cpu 1 \
   --min-instances 0 \
   --max-instances 2 \
-  --set-env-vars="NODE_ENV=production,PORT=8080"
+  --set-env-vars="NODE_ENV=production"
 
 echo ""
 echo "=================================================="
