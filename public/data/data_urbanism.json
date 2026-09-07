@@ -31,14 +31,14 @@
     "slideNumber": 3,
     "texts": [
       "From Blueprints to Outcomes",
-      "LINEAR DELIVERY",
-      "OUTCOME-CENTRIC"
+      "Linear Delivery (AIA) ➔ Outcome-Centric (RIBA)",
+      "Traditional Waterfall vs. Modern Circular Framework"
     ],
-    "image": "image4.jpg",
+    "image": "slide3_shift.svg",
     "bullets": [
-      "Beyond Pre-2013 Waterfall: Practical completion is not the finish line—it is the opening bell.",
-      "Outcomes over Output: Shipping a technically flawless dashboard that nobody consults creates digital landfill, not enterprise value.",
-      "Data as a Living Asset: Continuously instrumenting deployed platforms with telemetry to monitor voluntary adoption, query latency, and trust."
+      "The Paradigm Shift: Dale Sinclair's updates to the RIBA Plan of Work transitioned architecture from linear, disconnected handoffs to a closed-loop outcome lifecycle.",
+      "Beyond Pre-2013 Waterfall: Practical completion is not the finish line—it is the opening bell. Dashboards deployed without active usage create digital landfill.",
+      "Stage 7 (In Use) Telemetry: Continuously instrumenting production platforms with adoption telemetry, query latency, and trust metrics to feed directly back into future iterations."
     ]
   },
   {
